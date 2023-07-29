@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-container p{
+    font-family: Roboto;
+}
+
+.redes-sociais-footer{
+    display: flex;
+
+    margin-top: 10px;
+}
+
+.redes-sociais-footer{
+    cursor: pointer;
+}
+
+.instagram{
+    margin-left: 6px;
+}
+
+.discord{
+    margin-left: 6px;
+}
+
+.redes-sociais-footer svg:hover{
+    opacity: 80%;
+}

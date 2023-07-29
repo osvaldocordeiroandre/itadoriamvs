@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.contact-main{
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-size: cover;
+    
+}
+
+.form-main{
+    
+    padding: 40px;
+
+    border-radius: 8px;
+
+    max-width: 416px;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.contact-span{
+    margin-bottom: 30px;
+
+    font-family: Quicksand;
+    font-weight: 100;
+    font-size: .8rem;
+
+    display: flex;
+}
+
+.uzaki-container img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.uzaki-girl-container img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.nome{
+    margin-bottom: 20px;
+
+}
+
+.nome input{
+    width: 400px;
+    height: 30px;
+    
+    padding: 6px;
+
+    border-radius: 4px;
+    border: none;
+
+    outline: none;
+
+    background-color: #2d3032;
+
+    color: white;
+
+
+}
+
+
+.email{
+    margin-bottom: 20px;
+}
+
+.email input{
+    width: 400px;
+    height: 30px;
+    
+    padding: 6px;
+
+    border-radius: 4px;
+    border: none;
+
+    outline: none;
+
+    background-color: #2d3032;
+
+    color: white;
+}
+
+.button-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+
+}
+
+.button-submit input{
+    width: 90px;
+    height: 24px;
+
+    border-radius: 4px;
+    border: none;
+
+    background-color: orange;
+
+    font-family: Roboto;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.text-area textarea{
+    width: 400px;
+
+    resize: none;
+
+    padding: 6px;
+
+    border-radius: 4px;
+    border: none;
+
+    outline: none;
+
+    background-color: #2d3032;
+
+    color: white;
+}
+
+.alert-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+
+    font-family: Roboto;
+    
+}
+
+.alert-container span{
+    color: rgba(255, 255, 255, 0.582);
+}
+
+
+
+@media (max-width: 506px){
+    .nome input{
+        width: 100%;
+    }
+
+
+    .email input{
+        width: 100%;
+    }
+
+    .text-area textarea{
+        width: 100%;
+    }
+
+    .annie{
+        opacity: 10%;
+    }
+}

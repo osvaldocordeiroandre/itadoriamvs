@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.slides-area-container{
+    width: 100%;
+    max-width: 1350px;
+}
+
+.container-master-slide{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-itadori-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.LogoName{
+    width: 100%;
+    max-width: 300px;
+}
+
+.image-itadori-main p{
+    font-family: Roboto;
+    font-size: 1.4rem;
+}
+
+.text-itadori-area{
+    max-width: 1300px;
+
+    text-align: center;
+}
+
+.link-color{
+    color: orange;
+}
+
+.slide-container-partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-container-partners .slide span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: .8rem;
+}
+
+.slide-container-partners img{
+    width: 200px;
+
+    cursor: pointer;
+
+    transition: .5s;
+
+    border-radius: 20px;
+}
+
+.slide-container-partners img:hover{
+    transform: scale(1.1);
+
+    transition: .5s;
+}
+
+.left-space{
+    margin-left: 10px;
+}
+
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.partners h1{
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+.favorite-animes-container{
+    margin-top: 30px;
+}
+
+.our-animes-text{
+    max-width: 1300px;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.our-animes-text p{
+    font-size: 1.4rem;
+    font-family: Roboto;
+}
+
+.our-animes-text h2{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    margin-top: 20px;
+}
+
+.animes-favorite-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.favorite-anime-image:not(:last-child){
+    margin-right: 20px;
+}
+
+.favorite-anime-image img{
+    border-radius: 4px;
+
+    transition: .5s;
+
+    width: 100%;
+    max-width: 250px;
+}
+
+.favorite-anime-image p{
+    font-size: .8rem;
+
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.favorite-anime-image img:hover{
+    transform: scale(1.1);
+    
+    transition: .5s;
+}
+
+.partners-text{
+    max-width: 1200px;
+
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+.partners-text p{
+    font-size: 1.4rem;
+}
+
+.cellphopne-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellphone-image{
+    margin: 20px 0;
+}
+
+.cellphone-image img{
+    max-width: 500px;
+}
+
+.cellphone-text-area{
+    width: 400px;
+
+    text-align: center;
+}
+
+.banner-itadori-amvs{
+    margin: 30px 0;
+
+    width: 100%;
+    max-width: 800px;
+
+    border-radius: 6px;
+}
+
+.span-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 40px;
+}
+
+.our-work{
+    font-family: Roboto;
+}
+
+.who-are-we-text{
+    max-width: 1300px;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-family: Roboto;
+    font-size: 1.4rem;
+}

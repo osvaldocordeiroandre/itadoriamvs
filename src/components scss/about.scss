@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.video-itadori{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+
+    background-image: url(/Pages/About/gif/site720.gif);
+    background-size: cover;
+}
+
+video{
+    width: 100%;
+}
+
+.itadori-logo{
+    width: 100%;
+    max-width: 300px;
+
+    margin-top: 6%;
+
+    border-radius: 4px;
+}
+
+.video-itadori .itadoall{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0 6%;
+
+    padding-bottom: 6%;
+
+    width: 1050px;
+}
+
+.itadori-message{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+
+    font-family: Roboto;
+}
+
+.itadori-analustic{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 300px;
+
+    margin-top: 60px;
+    
+    font-family: Roboto;
+}
+
+.channelName{
+    font-size: 3rem;
+    font-weight: bolder;
+
+    width: 300px;
+
+
+}
+
+.h3message{
+    width: 320px;
+
+    font-size: 2rem;
+    font-weight: 200;
+
+    margin-top: 30px;
+}
+
+.itadoriAnalystic{
+    font-size: 2.5rem;
+
+    text-align: end;
+}
+
+.dados{
+    font-size: 2.7rem;
+
+}
+
+.main{
+    text-align: center;
+}
+
+.main .about-text{
+    margin: 10px 46px;
+    
+}
+
+.main .about-text span{
+    font-family: Roboto;
+    font-size: 1.4rem;
+}
+
+.main .about-text a{
+    color: orange;
+}
+
+.logo-white{
+    margin-top: 20px;
+}
+
+.logo-white img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 40px;
+}
+
+.info-text{
+    max-width: 500px;
+
+    margin: 0 30px;
+}
+
+.infos p{
+    font-family: Roboto;
+    font-size: 1.4rem;
+
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.info-text2{
+    max-width: 1300px;
+
+    margin: 0 46px;
+}
+
+.softaware-infos{
+    margin-bottom: 20px;
+}
+
+.softaware-infos h1{
+    font-family: Roboto;
+}
+
+.software-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 40px 0;
+}
+
+.software-icons img{
+    width: 80px;
+
+    cursor: pointer;
+
+
+    transition: .5s;
+}
+
+.software-icons img:hover{
+    transform: scale(1.1);
+}
+
+.after-effects{
+    margin-right: 20px;
+}
+
+.ps{
+    margin-right: 20px;
+}
+
+.davinci{
+    margin-right: 20px;
+}
+
+.capcut{
+    border-radius: 10px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+}
