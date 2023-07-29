@@ -163,7 +163,7 @@ export default function Clips() {
 
       {imagesLoaded && (
         <>
-            <Header/>
+            <Header />
 
           <div className='search-content'>
             <input className='search-part' type="text" name="" id="" placeholder='Anime name...' onChange={handleSearch} />
