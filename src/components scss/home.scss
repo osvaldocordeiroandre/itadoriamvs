@@ -228,3 +228,17 @@
     font-family: Roboto;
     font-size: 1.4rem;
 }
+
+.container{
+    animation: Opacityx 1s;
+}
+
+@keyframes Opacityx{
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

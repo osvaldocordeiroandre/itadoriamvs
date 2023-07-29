@@ -17,7 +17,7 @@ import ScrollToTop from 'react-scroll-to-top'
 export default function About() {
   return (
 
-    <div>
+    <div className='allaboutus'>
 
       <ScrollToTop/>
 

@@ -31,6 +31,7 @@ export default function Header() {
           <NavLink to={'/'} onClick={() => setActiveLink('/')}> <li className={location.pathname === '/' || activeLink === '/' ? 'active-link' : ''}>HOME</li> </NavLink>
           <NavLink to={'/About'} onClick={() => setActiveLink('/About')}> <li className={location.pathname === '/About' || activeLink === '/About' ? 'active-link' : ''}>ABOUT</li> </NavLink>
           <NavLink to={'/Contact'} onClick={() => setActiveLink('/Contatc')}> <li className={location.pathname === '/Contact' || activeLink === '/Contact' ? 'active-link' : ''}>CONTACT</li> </NavLink>
+          <NavLink to={'/Clips'} onClick={() => setActiveLink('/Clips')}> <li className={location.pathname === '/Clips' || activeLink === '/Clips' ? 'active-link' : ''}> CLIPS </li> </NavLink>
         </ul>
 
       </menu>
@@ -47,18 +48,22 @@ export default function Header() {
             <NavLink to={'/Contact'} onClick={() => setActiveLink('/Contatc')}> <li className={location.pathname === '/Contact' || activeLink === '/Contact' ? 'active-link' : ''}>CONTACT</li> </NavLink>
           </div>
 
+          <div>
+          <NavLink to={'/Clips'} onClick={() => setActiveLink('/Clips')}> <li className={location.pathname === '/Clips' || activeLink === '/Clips' ? 'active-link' : ''}> CLIPS </li> </NavLink>
+          </div>
+
           <div className='responsive-icons'>
-            <NavLink to={'mailto:itadoriamvsbusiness@gmail.com'}> <AiOutlineMail title='Email' size={19} /> </NavLink>
+
             <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram title='Instagram' size={19} /> </NavLink>
             <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord title='Discord' size={19} /> </NavLink>
             <Randonvideo title="Vídeo aleatorio" />
+
           </div>
         </ul>
       </div>
 
       <div className="icons">
 
-        <NavLink to={'mailto:itadoriamvsbusiness@gmail.com'}> <AiOutlineMail size={19} /> </NavLink>
         <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram size={19} /> </NavLink>
         <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord size={19} /> </NavLink>
         <Randonvideo />
