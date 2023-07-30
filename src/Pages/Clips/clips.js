@@ -171,8 +171,6 @@ export default function Clips() {
         </>
       )}
 
-      <div className="thememod" onClick={AddMoonColor} > <MdDarkMode fill={moonColor} onClick={AddTheme} cursor={'pointer'} size={20} /> </div>
-
       <ScrollToTop />
 
       {showmensagem && <p className='error-search'> Anime não encontrado... </p>}
