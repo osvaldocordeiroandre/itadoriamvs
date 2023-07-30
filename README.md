@@ -8,4 +8,5 @@ Site I made for my youtube channel alone to train my studies, where there will b
 
 Responsive website for all devices.
 
-![image](https://github.com/osvaldocordeiroandre/itadoriamvs/assets/94922391/e3879ab9-2d2b-4d15-a302-0385e1d3426c)
+![image](https://github.com/osvaldocordeiroandre/itadoriamvs/assets/94922391/2cca0353-2fbc-4f21-b935-78ca092b2432)
+
