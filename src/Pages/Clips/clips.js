@@ -173,7 +173,7 @@ export default function Clips() {
 
       <ScrollToTop />
 
-      {showmensagem && <p className='error-search'> Anime não encontrado... </p>}
+      {showmensagem && <p className='error-search'> Anime Not Found... </p>}
 
       <div className='anime-space-content'>
 
