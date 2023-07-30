@@ -49,22 +49,22 @@ export default function Home() {
             <div className="animes-favorite-image">
 
               <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/19815/No_Game_No_Life?q=no%20game%20no%20life&cat=anime'} target={'_blank'}><img src="https://cdn.discordapp.com/attachments/359157568859406337/1087455746783973466/nogame-nolife-test.png" alt="capa de no game no life" /></Link>
+                <Link to={'https://myanimelist.net/anime/19815/No_Game_No_Life?q=no%20game%20no%20life&cat=anime'} target={'_blank'}><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126458419916871/nogame-nolife-test.webp" alt="capa de no game no life" /></Link>
                 <p>No Game No Life</p>
               </div>
 
               <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann?q=Tengen%20Toppa%20Gurren-Lagann&cat=anime'} target={'_blank'}><img src="https://cdn.discordapp.com/attachments/359157568859406337/1087455745525678130/tengen-test.png" alt="capa de Tengen Toppa Gurren-Lagann" /></Link>
+                <Link to={'https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann?q=Tengen%20Toppa%20Gurren-Lagann&cat=anime'} target={'_blank'}><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126465172746321/tengen-test.webp" alt="capa de Tengen Toppa Gurren-Lagann" /></Link>
                 <p>Tengen Toppa Gurren-Lagann</p>
               </div>
 
               <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=Full%20Metal%20a&cat=anime'} target='_blank'><img src="https://cdn.discordapp.com/attachments/359157568859406337/1087455746389704734/fullmetal-test.png" alt="capa de Full Metal" /></Link>
+                <Link to={'https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=Full%20Metal%20a&cat=anime'} target='_blank'><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126444083777546/fullmetal-test.webp" alt="capa de Full Metal" /></Link>
                 <p>Fullmetal Alchemist</p>
               </div>
 
               <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/47917/Bocchi_the_Rock?q=bocchi&cat=anime'} target='_blank'><img src="https://cdn.discordapp.com/attachments/359157568859406337/1087455745852837888/bocchi-test.png" alt="capa de Bocchi the Rock!" /></Link>
+                <Link to={'https://myanimelist.net/anime/47917/Bocchi_the_Rock?q=bocchi&cat=anime'} target='_blank'><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126436185919519/bocchi-test.webp" alt="capa de Bocchi the Rock!" /></Link>
                 <p>Bocchi the Rock!</p>
               </div>
 
