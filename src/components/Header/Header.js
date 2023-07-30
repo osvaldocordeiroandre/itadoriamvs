@@ -5,7 +5,6 @@ import { Link, useLocation, NavLink } from 'react-router-dom'
 import '../../components scss/header.scss'
 
 import Logo from '../../Assets/Imagens/Itadori_Logo_braca.webp'
-import { AiOutlineMail } from 'react-icons/ai'
 import { FaInstagram, FaDiscord } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import Randonvideo from '../RandomVideo/Randonvideo'

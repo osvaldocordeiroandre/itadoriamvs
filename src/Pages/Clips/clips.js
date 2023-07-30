@@ -9,6 +9,10 @@ import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
   const [animes, setAnimes] = useState([
+    {nome:'Howl no Ugoku Shiro, Howl s Moving Castle ', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278555274682468/howl-no-ugoku-shiro.webp', link:'https://www.playbook.com/s/ajksz/o2FH5QZkFqEcuhy1CqzD3UNL'},
+    {nome:'Steins;Gate, Steins Gate', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278542939238410/steins-gate.webp', link:'https://www.playbook.com/s/ajksz/df2o3DPgzn7NCaLn76w6ZpNA'},
+    {nome:'Umi ga Kikoeru, The Ocean Waves, I Can Hear the Sea, Ocean Waves ', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278569510162452/ocean-waves.webp', link:'https://www.playbook.com/s/ajksz/KtVvMgYZqzUGcBrXbwdiJoaG'},
+    {nome:'Sen to Chihiro no Kamikakushi, Spirited Away, Sen and Chihiro s Spiriting Away', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278581367455948/sen-to-chihiro-no-kamikakushi.webp', link:'https://www.playbook.com/s/ajksz/TM5x7JJXTeXc1pZUXJYFVtq1'},
     { nome: 'Noragami Season 1 - Stray God', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1135117569641164872/noragami-season-1-stray-god.webp', link: 'https://www.playbook.com/s/ajksz/4NLC16HDTiwP9XBtiHfKDgWk' },
     { nome: 'Noragami Season 2 - Aragato', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1135117580542169098/noragami-season-2-aragato.webp', link: 'https://www.playbook.com/s/ajksz/VQd8d79JzaTTaLHr9g66fP9s' },
     { nome: 'Perfect Blue', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1135117611617759262/Perfect-Blue.webp', link: 'https://www.playbook.com/s/ajksz/VUBuKB72vmNBVAnYBsTWQyvW' },

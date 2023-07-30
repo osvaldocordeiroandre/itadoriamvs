@@ -7,6 +7,12 @@ export default function Randonvideo() {
 
     const videoUrls = [
 
+        'https://www.youtube.com/watch?v=NG5_I-Wzfn8',
+        'https://www.youtube.com/watch?v=2wDzFLMGLwE',
+        'https://www.youtube.com/watch?v=E-UVvnaSVvw',
+        'https://www.youtube.com/watch?v=KqtYrvbTKzU',
+        'https://www.youtube.com/watch?v=-3iko82au3Q',
+        'https://www.youtube.com/watch?v=ww63_Aii-Zs',
         'https://www.youtube.com/watch?v=067S_uyHD_Y',
         'https://www.youtube.com/watch?v=wNxRo7S73PQ',
         'https://www.youtube.com/watch?v=AvNkiJsM30s',
