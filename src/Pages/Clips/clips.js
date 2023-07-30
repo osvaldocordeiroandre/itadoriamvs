@@ -135,6 +135,7 @@ export default function Clips() {
       document.getElementById('pagesid').style.display = 'none';
     } else if (e.target.value && filteredAnimes) {
       document.getElementById('pagesid').style.display = 'none';
+      setShowMensagem(false);
     }
     else {
       setShowMensagem(false)
