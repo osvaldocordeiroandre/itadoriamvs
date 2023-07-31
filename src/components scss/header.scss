@@ -29,6 +29,10 @@ header {
     font-size: .9rem;
 }
 
+li:hover{
+    transform: scale(1.02);
+}
+
 .icons {
     display: flex;
 }
@@ -64,6 +68,13 @@ a {
     display: none;
 }
 
+.addhover:hover{
+    transform: scale(1.02);
+}
+
+svg:hover{
+    transform: scale(1.04);
+}
 
 @media (max-width: 750px) {
     .itens {
