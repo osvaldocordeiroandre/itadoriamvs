@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+@mixin centerItens(){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .name-logo {
     width: 100%;
     max-width: 200px;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
+    @include centerItens();
 
     width: 100%;
 
