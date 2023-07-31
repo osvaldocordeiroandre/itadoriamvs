@@ -9,6 +9,10 @@ import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
   const [animes, setAnimes] = useState([
+    {nome:'Tamako Market', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638905140555786/tamako-market.webp', link:'https://www.playbook.com/s/ajksz/fz7VoWu8VrZrduZxPm4N9XfS'},
+    {nome:'Tamako Love Story', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638918222589962/tamako-love-story.webp', link:'https://www.playbook.com/s/ajksz/2nPFodY4EeX2iTZz4uDYvqyB'},
+    {nome:'The Garden of Words', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638926174982377/the-garden-of-words.webp', link:'https://www.playbook.com/s/ajksz/cff3fpBo1vFvPsHFr2Ax1ade'},
+    {nome:'The Disappearance of Haruhi Suzumiya, Suzumiya Haruhi no Shoushitsu', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638930293788763/the-disappearance-of-haruhi-suzumiya.webp', link:'https://www.playbook.com/s/ajksz/weuX4S8AH2iqEf4rSBcWxBCM'},
     {nome:'Howl no Ugoku Shiro, Howl s Moving Castle ', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278555274682468/howl-no-ugoku-shiro.webp', link:'https://www.playbook.com/s/ajksz/o2FH5QZkFqEcuhy1CqzD3UNL'},
     {nome:'Steins;Gate, Steins Gate', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278542939238410/steins-gate.webp', link:'https://www.playbook.com/s/ajksz/df2o3DPgzn7NCaLn76w6ZpNA'},
     {nome:'Umi ga Kikoeru, The Ocean Waves, I Can Hear the Sea, Ocean Waves ', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135278569510162452/ocean-waves.webp', link:'https://www.playbook.com/s/ajksz/KtVvMgYZqzUGcBrXbwdiJoaG'},
