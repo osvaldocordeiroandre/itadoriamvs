@@ -33,6 +33,9 @@ export default function Contact() {
     if(name === '' || email === '' || message === ''){
 
       setAlert("Fill in all fields")
+      setInterval(() => {
+        setAlert(null)
+      }, 3000)
       return;
   
     }
