@@ -229,6 +229,28 @@
     font-size: 1.4rem;
 }
 
+.amv-text-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amv-text{
+    max-width: 1300px;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-family: Roboto;
+    font-size: 1.4rem;
+}
+
+.amv-text h2{
+    margin: 20px 0;
+
+}
+
 .container{
     animation: Opacityx 1s;
 }

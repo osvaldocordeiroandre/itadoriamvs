@@ -110,6 +110,49 @@ export default function Home() {
 
         </div>
 
+        <div className="amv-text-area">
+
+          <div className="amv-text">
+
+          <h2> Amv </h2>
+
+            <span> These audiovisual creations called AMVs, or Anime Music Videos, go deeper than just slicing and chopping anime scenes to the rhythm of music. They are true masterpieces, skillfully crafted by harmonizing various components such as effects, storyline, synchronization, lyrics, and the overarching narrative envisioned by the editor.
+
+              <br />
+              <br />
+
+              Highlighting the artistic prowess of AMV editors, it is essential to acknowledge their ability to visually tell stories. With a special talent for selecting perfect scenes, they effortlessly weave an exciting and cohesive narrative. Each scene acts as a brushstroke, coming together to form an unparalleled masterpiece.
+
+              <br />
+              <br />
+
+              Creating a captivating experience for the viewer is another crucial element of AMVs: synchronization. Editors must meticulously adjust each cut and effect to match the rhythm of the selected music, resulting in an immersive fusion. When executed masterfully, this synchronization transports the audience, making them feel as if the scenes were precisely choreographed to the music, allowing them to be truly immersed in the universe created by the editor.
+
+              <br />
+              <br />
+
+              Adding layers of meaning to the chosen visuals, the words of the music can guide the flow of the edit and evoke specific emotions and feelings. The lyrics of the music serve as an essential element for the narrative of AMVs, providing inspiration for editors to build the story they want to tell.
+
+              <br />
+              <br />
+
+              Visual effects are another distinctive feature of AMVs. Ranging in complexity, they can range from simple adjustments to complex animations and unique transitions. These effects serve to elevate the emotional resonance of the edit, injecting an element of individuality and elegance into the final product.
+
+              <br />
+              <br />
+
+              AMVs are like an open window to creativity. They allow creators to craft unique narratives that transcend the boundaries of the source material. Whether revealing personal emotions, sharing meaningful messages, or reflecting on our own experiences, AMVs become a canvas for true artistic expression.
+
+              <br />
+              <br />
+
+              The creation of AMVs would be incomplete without recognizing the importance of audio. Like the beating heart, music breathes life into these works, making the careful selection of the soundtrack vital. It sets the tone and keeps the audience captivated throughout the entire editing process.
+            </span>
+
+          </div>
+
+        </div>
+
       </main>
 
       <Footer />

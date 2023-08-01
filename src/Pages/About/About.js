@@ -60,7 +60,7 @@ export default function About() {
 
         <div className="software-icons">
 
-          <div className='after-effects'><a href={'https://drive.google.com/uc?id=17pDyAAuOn42_STyvgc2R4kEWdIdPBYlD&export=download&confirm=t&uuid=9feccf71-253b-49ff-ab71-f0e186948501'}><img src={After} alt="After Effects 2020 logo" /></a></div>
+          <div className='after-effects'><a href={'https://download850.mediafire.com/mq7ni5999f7gSiKkFdM3TJ3VbCNmwusqFqL4vPMQcXtMxdkAmeUGA4D1bRmxYwxxImfVOv7rNzVB7KT7qrF_EHwKOkAgIwcWLJRjwR4LgQTp50x_08bCSLWASP8XnWd9yJDsvsuTi6KcgSfwdlvgrs0wTdNO2Q-chGN5gwV_Dq13Xqk/rrx4mm4fbg7jf4l/Adobe.After.Effects.2020.v17.1.3.41.zip'} download><img src={After} alt="After Effects 2020 logo" /></a></div>
           <div className='ps'><img src={Ps} alt="Photoshop 2020 logo" /></div>
           <div className='davinci'><a href="https://www.blackmagicdesign.com/br/products/davinciresolve" target='_blank'><img src={Davinci} alt="Davinci Logo" /></a></div>
           <a href="https://www.capcut.com/" target='_blank'><img className='capcut' src={CapCut} alt="Capcut logo" /></a>
