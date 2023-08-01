@@ -67,11 +67,11 @@ export default function Contact() {
 
         <form action="form" className='form-main' onSubmit={sendEmail}>
 
-          <div className="nome"> <input type="text" placeholder='Your Name...' value={name} onChange={(e) => setName(e.target.value)} name="name" id="" /> </div>
+          <div className="nome"> <input type="text" placeholder='Your Name...' value={name} onChange={(e) => setName(e.target.value)} required name="name" id="" /> </div>
 
-          <div className="email"> <input type="email" placeholder='Your Email...' value={email} onChange={(e) => setEmail(e.target.value)} name="email" id="" /> </div>
+          <div className="email"> <input type="email" placeholder='Your Email...' value={email} onChange={(e) => setEmail(e.target.value)} required name="email" id="" /> </div>
 
-          <div className="text-area"> <textarea name="text-area" placeholder='Your Message...' value={message} onChange={(e) => setMessage(e.target.value)} id="" cols="30" rows="10"></textarea> </div>
+          <div className="text-area"> <textarea name="text-area" placeholder='Your Message...' value={message} onChange={(e) => setMessage(e.target.value)} required id="" cols="30" rows="10"></textarea> </div>
 
         <div className="alert-container"> <span> {alert} </span> </div>
         <div className="button-submit"> <input type="submit" value="Send" /> </div>
