@@ -1,10 +1,11 @@
-import React from 'react'
-
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 
 import '../../components scss/home.scss'
 import Slideshow from '../../Slide/Slide'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 import { Link } from 'react-router-dom'
 import ScrollToTop from 'react-scroll-to-top'
@@ -17,6 +18,11 @@ import Neffex from '../../Assets/Partner Artists/NEFFEX.webp'
 import Scott from '../../Assets/Partner Artists/Scott-the -pisces.webp'
 
 export default function Home() {
+
+  useEffect(() => {
+    Aos.init();
+  }, [])
+
   return (
     <div className="container">
 
@@ -32,7 +38,7 @@ export default function Home() {
 
       <main>
 
-        <div className="image-itadori-main">
+        <div className="image-itadori-main" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="800">
 
           <Link to={'https://www.youtube.com/channel/UCn331wBdwv1oApYpa1vOfVw?sub_confirmation=1'} target={'_blank'}><img className='LogoName' src={LogoName} alt="Logo branca ITADORI AMV'S" /></Link>
           <div className="text-itadori-area">
@@ -42,9 +48,9 @@ export default function Home() {
 
           </div>
 
-          <div className="our-animes-text">  <p>In case you wonder what our favorite animes are, here are 4 animes that you will really like, they are our favorite animes from the old days, so I hope you like them if you watch them, if you want to have more information about animes, click on their image ♥</p> <br /> <h2>Favorite Animes 🍿</h2>  </div>
+          <div className="our-animes-text">  <p>In case you wonder what our favorite animes are, here are 4 animes that you will really like, they are our favorite animes from the old days, so I hope you like them if you watch them, if you want to have more information about animes, click on their image ♥</p> <br /> <h2 data-aos="fade-right" data-aos-duration="800">Favorite Animes 🍿</h2>  </div>
 
-          <div className="favorite-animes-container">
+          <div className="favorite-animes-container" data-aos="fade-left" data-aos-duration="800">
 
             <div className="animes-favorite-image">
 
@@ -72,7 +78,7 @@ export default function Home() {
 
           </div>
 
-          <div className="span-text-container">
+          <div className="span-text-container" data-aos="fade-up" data-aos-duration="800">
             <div className="our-work"> <h1> Who are we? </h1> </div>
 
             <div className="who-are-we-text"> <span> ITADORI AMV's is proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists. All videos are edited in the highest quality which makes up different scenes from various free commercial animation images! thanks to the animation developers! <br /> <br /> We have a team of Professional Editors focused on editing AMV's for over 8 years, our work has provided impactful narratives for all songs, giving visibility to countless unknown artists through the construction of their Anime Music Videos. <br /> <br /> My goal is to bring another way to enjoy animation by bringing together the two things that youtube audiences love the most, music and animations, and inspire people in that way. <br /> <br /> Want to know what's new in the animation industry? Watch this channel. Want to discover new artists and music genres to listen to? Our channel brings all this and more to you!
@@ -83,9 +89,9 @@ export default function Home() {
 
         </div>
 
-        <div className="partners"> <h1> Our Favorite Musicians </h1> </div>
+        <div className="partners" data-aos="fade-left" data-aos-duration="800"> <h1> Our Favorite Musicians </h1> </div>
 
-        <div class="slide-container-partners">
+        <div class="slide-container-partners" data-aos="fade-right" data-aos-duration="800">
 
           <div class="slide">
             <Link to={'https://www.youtube.com/@3OneOhOfficial'} target={'_blank'}><img src={OneOh} alt="Slide 1" /></Link>
@@ -112,7 +118,7 @@ export default function Home() {
 
         <div className="amv-text-area">
 
-          <div className="amv-text">
+          <div className="amv-text" data-aos="fade-up" data-aos-duration="800">
 
           <h2> Amv </h2>
 
