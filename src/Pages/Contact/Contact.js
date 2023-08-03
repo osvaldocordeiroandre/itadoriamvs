@@ -9,8 +9,6 @@ import Footer from '../../components/Footer/Footer'
 import emailjs from '@emailjs/browser'
 import ScrollToTop from 'react-scroll-to-top'
 
-import Annie from '../../Assets/Imagens/annie-no-logo.webp'
-
 export default function Contact() {
 
   const [name, setName] = useState('');
