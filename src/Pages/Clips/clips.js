@@ -9,6 +9,10 @@ import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
   const animes = [
+    { id:'71', nome:'Weathering with You, Tenki no Ko', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197194013851709/weathering-with-you.webp', link:'https://www.playbook.com/s/ajksz/ZTPx8Z4VMPyniu5VRFGzEkqB'},
+    { id:'70', nome:'Vinland Saga Season 1', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197208161226752/vinland-saga-season-1.webp', link:'https://www.playbook.com/s/ajksz/meVMR48hcwugNyJLkudM5yER'},
+    { id:'69', nome:'Tokyo Ghoul Season 1', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197217892012103/tokyo-ghoul-season-1.webp', link:'https://www.playbook.com/s/ajksz/kxB1daNukQ6dLy6crWL13qqt'},
+    { id:'68', nome:'Tokyo Ghoul Season 2', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197228864327710/tokyo-ghoul-season-2.webp', link:'https://www.playbook.com/s/ajksz/4cCWVcNN7hqBgYzScSJvc3GY'},
     { id:'67',nome:'Tamako Market', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638905140555786/tamako-market.webp', link:'https://www.playbook.com/s/ajksz/fz7VoWu8VrZrduZxPm4N9XfS'},
     { id:'66',nome:'Tamako Love Story', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638918222589962/tamako-love-story.webp', link:'https://www.playbook.com/s/ajksz/2nPFodY4EeX2iTZz4uDYvqyB'},
     { id:'65',nome:'The Garden of Words', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1135638926174982377/the-garden-of-words.webp', link:'https://www.playbook.com/s/ajksz/cff3fpBo1vFvPsHFr2Ax1ade'},
