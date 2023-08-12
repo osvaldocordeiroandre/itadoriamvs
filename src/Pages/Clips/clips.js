@@ -9,6 +9,8 @@ import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
   const animes = [
+    {id:'73', nome:'Jujutsu Kaisen 0', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1139899403021320242/jujutsu-kaisen-0.webp', link:'https://www.playbook.com/s/ajksz/KGCYWcyNQDCWfNmhjCFJHq79'},
+    {id:'72', nome:'Zankyō no Terror, Zankyou no Terror', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1139899371127853156/zanky197141-no-terror.webp', link:'https://www.playbook.com/s/ajksz/onsCyDkS3xuQAA51uq5wt8Fg'},
     { id:'71', nome:'Weathering with You, Tenki no Ko', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197194013851709/weathering-with-you.webp', link:'https://www.playbook.com/s/ajksz/ZTPx8Z4VMPyniu5VRFGzEkqB'},
     { id:'70', nome:'Vinland Saga Season 1', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197208161226752/vinland-saga-season-1.webp', link:'https://www.playbook.com/s/ajksz/meVMR48hcwugNyJLkudM5yER'},
     { id:'69', nome:'Tokyo Ghoul Season 1', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1137197217892012103/tokyo-ghoul-season-1.webp', link:'https://www.playbook.com/s/ajksz/kxB1daNukQ6dLy6crWL13qqt'},
