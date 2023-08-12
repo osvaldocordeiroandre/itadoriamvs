@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer'
 import '../../components scss/home.scss'
 import Slideshow from '../../Slide/Slide'
 
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import ScrollToTop from 'react-scroll-to-top'
 
 import LogoName from '../../Assets/Imagens/Itadori_Logo_braca.webp'
@@ -13,6 +13,11 @@ import Caroline from '../../Assets/Partner Artists/Caroline.webp'
 import Hurshel from '../../Assets/Partner Artists/Hurshel.webp'
 import Neffex from '../../Assets/Partner Artists/NEFFEX.webp'
 import Scott from '../../Assets/Partner Artists/Scott-the -pisces.webp'
+import LoveNow from '../../Assets/new designer/love-me-now.png'
+import Evertything from '../../Assets/new designer/everything-goes-on.png'
+import OceanBlue from '../../Assets/new designer/ocean-blue.png'
+import paradise from '../../Assets/new designer/so-this-is-paradise.png'
+import Clipsimage from '../../Assets/new designer/clips.png'
 
 export default function Home() {
 
@@ -41,9 +46,43 @@ export default function Home() {
 
           </div>
 
-          <div className="our-animes-text">  <p>In case you wonder what our favorite animes are, here are 4 animes that you will really like, they are our favorite animes from the old days, so I hope you like them if you watch them, if you want to have more information about animes, click on their image ♥</p> <br /> <h2 data-aos="fade-right" data-aos-duration="800">Favorite Animes 🍿</h2>  </div>
+          <div className="our-animes-text">  <p>In case you wonder what our favorite animes are, here are 4 animes that you will really like, they are our favorite animes from the old days, so I hope you like them if you watch them, if you want to have more information about animes, click on their image ♥</p> <br /> </div>
+
+          <div className="new-images">
+
+            <h2>Best amvs</h2>
+            <div className='newDesignerContainer'>
+              <div className="loveMeNow">
+                <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} alt="love me now" /></Link>
+              </div>
+              <div className="everythingGoes">
+                <Link to={'https://youtu.be/Zu4KpfFoCow'} target='_blank'><img src={Evertything} alt="everything" /></Link>
+              </div>
+            </div>
+
+            <div className="mostPopularArea">
+              <h2>Most popular</h2>
+
+              <div className='popularVideos'>
+                <div className="oceanBlue">
+                  <Link to={'https://youtu.be/c6YHXtHzvQg'} target='_blank'><img src={OceanBlue} alt="ocean blue" /></Link>
+                </div>
+                <div className="paradise">
+                  <Link to={'https://youtu.be/y-DXPpn23kg'} target='_blank'><img src={paradise} alt="paradise" /></Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="clips">
+              <div className="clipsImage">
+                <NavLink to={'/clips'}><img src={Clipsimage} alt="clips" /></NavLink>
+              </div>
+            </div>
+          </div>
 
           <div className="favorite-animes-container" >
+
+          <h2 data-aos="fade-right" data-aos-duration="800">Favorite Animes 🍿</h2> 
 
             <div className="animes-favorite-image">
 
@@ -109,48 +148,6 @@ export default function Home() {
 
         </div>
 
-        <div className="amv-text-area">
-
-          <div className="amv-text">
-
-          <h2> Amv </h2>
-
-            <span> These audiovisual creations called AMVs, or Anime Music Videos, go deeper than just slicing and chopping anime scenes to the rhythm of music. They are true masterpieces, skillfully crafted by harmonizing various components such as effects, storyline, synchronization, lyrics, and the overarching narrative envisioned by the editor.
-
-              <br />
-              <br />
-
-              Highlighting the artistic prowess of AMV editors, it is essential to acknowledge their ability to visually tell stories. With a special talent for selecting perfect scenes, they effortlessly weave an exciting and cohesive narrative. Each scene acts as a brushstroke, coming together to form an unparalleled masterpiece.
-
-              <br />
-              <br />
-
-              Creating a captivating experience for the viewer is another crucial element of AMVs: synchronization. Editors must meticulously adjust each cut and effect to match the rhythm of the selected music, resulting in an immersive fusion. When executed masterfully, this synchronization transports the audience, making them feel as if the scenes were precisely choreographed to the music, allowing them to be truly immersed in the universe created by the editor.
-
-              <br />
-              <br />
-
-              Adding layers of meaning to the chosen visuals, the words of the music can guide the flow of the edit and evoke specific emotions and feelings. The lyrics of the music serve as an essential element for the narrative of AMVs, providing inspiration for editors to build the story they want to tell.
-
-              <br />
-              <br />
-
-              Visual effects are another distinctive feature of AMVs. Ranging in complexity, they can range from simple adjustments to complex animations and unique transitions. These effects serve to elevate the emotional resonance of the edit, injecting an element of individuality and elegance into the final product.
-
-              <br />
-              <br />
-
-              AMVs are like an open window to creativity. They allow creators to craft unique narratives that transcend the boundaries of the source material. Whether revealing personal emotions, sharing meaningful messages, or reflecting on our own experiences, AMVs become a canvas for true artistic expression.
-
-              <br />
-              <br />
-
-              The creation of AMVs would be incomplete without recognizing the importance of audio. Like the beating heart, music breathes life into these works, making the careful selection of the soundtrack vital. It sets the tone and keeps the audience captivated throughout the entire editing process.
-            </span>
-
-          </div>
-
-        </div>
 
       </main>
 

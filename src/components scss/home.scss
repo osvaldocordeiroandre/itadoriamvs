@@ -269,3 +269,113 @@
         opacity: 1;
     }
 }
+
+.new-images{
+    margin-top: 30px;
+}
+
+.newDesignerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+.newDesignerContainer img{
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: .5s;
+
+    width: 100%;
+}
+
+.newDesignerContainer img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.loveMeNow{
+    overflow: hidden;
+}
+
+.everythingGoes{
+    overflow: hidden;
+}
+
+.mostPopularArea{
+    margin-top: 30px;
+}
+
+.popularVideos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+.popularVideos img{
+    border-radius: 4px;
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.popularVideos img:hover{
+    transform: scale(1.1);
+
+    transition: .5s;
+}
+
+.oceanBlue{
+    overflow: hidden;
+}
+
+.paradise{
+    overflow: hidden;
+}
+
+.clips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.clips img{
+    border-radius: 4px;
+
+    max-width: 1180px;
+    width: 100%;
+
+    transition: .5s;
+
+    cursor: pointer;
+}
+
+.clips img:hover{
+    transform: scale(1.1);
+
+    transition: .5s;
+}
+
+.clipsImage{
+    overflow: hidden;
+}
+
+@media (max-width: 1159px){
+    h2{
+        text-align: center;
+    }
+}
