@@ -99,7 +99,7 @@ export default function Home() {
 
           <div className="favorite-animes-container" >
 
-            <h2 data-aos="fade-right" data-aos-duration="800">TRENDING ANIME NOW 🍿</h2>
+            <h2>TRENDING ANIME NOW 🍿</h2>
 
             <div className="animes-favorite-image">
 
