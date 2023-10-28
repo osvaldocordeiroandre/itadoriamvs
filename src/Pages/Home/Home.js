@@ -67,7 +67,7 @@ export default function Home() {
 
           <div className="new-images">
 
-            <h2>Best amvs</h2>
+            <h2>BEST AMVS</h2>
             <div className='newDesignerContainer'>
               <div className="loveMeNow">
                 <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} alt="love me now" /></Link>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
 
             <div className="mostPopularArea">
-              <h2>Most popular</h2>
+              <h2>MOST POPULAR</h2>
 
               <div className='popularVideos'>
                 <div className="oceanBlue">
