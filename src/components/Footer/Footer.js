@@ -14,8 +14,6 @@ export default function Footer() {
     return (
         <div className='footer-container'>
 
-            <Link to={'https://www.youtube.com/channel/UCn331wBdwv1oApYpa1vOfVw?sub_confirmation=1'} target={'_blank'}><img className='banner-itadori-amvs' src={BannerIta} alt="Imagem escritas com o nome ITADORI AMV'S" /></Link>
-
             <div className='year-container'>
 
                 <p> © ITADORI AMV'S - {year} </p>

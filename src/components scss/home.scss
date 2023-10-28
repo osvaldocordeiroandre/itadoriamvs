@@ -24,9 +24,14 @@
     overflow-y: hidden;
 }
 
+.renderitadorimage{
+    max-width: 600px;
+    width: 100%;
+}
+
 .LogoName{
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .image-itadori-main p{
@@ -92,22 +97,32 @@
     margin-left: 10px;
 }
 
+.partnercontainerArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .partners{
     display: flex;
-    justify-content: center;
     align-items: center;
 
     margin-top: 40px;
 }
 
 .partners h1{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     font-family: Roboto;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .favorite-animes-container{
     margin-top: 30px;
+}
+
+.favorite-animes-container h2{
+    font-size: 1.1rem;
 }
 
 .our-animes-text{
@@ -208,17 +223,70 @@
     border-radius: 6px;
 }
 
+.readMore{
+    background-color: black;
+
+    color: white;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    margin-top: 20px;
+
+    outline: none;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.readMore:hover{
+    transform: scale(1.1);
+
+    transition: .5s;
+}
+
 .span-text-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 20px;
 
     margin-top: 40px;
+
 }
 
 .our-work{
+    display: flex;
+    flex-wrap: wrap;
+
     font-family: Roboto;
+
+    max-width: 450px;
+    width: 100%;
+}
+
+.h3area{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 450px;
+    width: 100%;
+}
+
+.h3area h3{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-weight: 100;
 }
 
 .who-are-we-text{
@@ -272,6 +340,10 @@
 
 .new-images{
     margin-top: 30px;
+}
+
+.new-images h2 {
+    font-size: 1.1rem;
 }
 
 .newDesignerContainer{

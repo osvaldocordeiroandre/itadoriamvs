@@ -1,5 +1,6 @@
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import TopList from '../../components/TopAnimeList/Topanimelist'
 
 import '../../components scss/home.scss'
 import Slideshow from '../../Slide/Slide'
@@ -19,6 +20,9 @@ import OceanBlue from '../../Assets/new designer/ocean-blue.png'
 import paradise from '../../Assets/new designer/so-this-is-paradise.png'
 import Clipsimage from '../../Assets/new designer/clips.png'
 
+import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
+import RenderIta from '../../Assets/Imagens/render_itadori.png'
+
 export default function Home() {
 
   return (
@@ -28,25 +32,38 @@ export default function Home() {
 
       <Header />
 
-      <div className='container-master-slide'>
+      <div className="video-itadori">
+        <div className='itadoall'>
+          <img className='itadori-logo' src={LogoItadori} alt="" />
+
+          <div className="itadori-message">
+
+            <h1 className='channelName'> <strong> ITADORI AMV'S </strong> </h1>
+            <h3 className='h3message'> We bring another way to enjoy animations! </h3>
+
+          </div>
+
+          <div className="itadori-analustic">
+
+            <h2 className='itadoriAnalystic'><strong>analytics</strong> 📊</h2>
+            <h1 className='dados' > <strong> 📺 77k+ subscribers <br /> 👀 20M+ views </strong> </h1>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/*<div className='container-master-slide'>
         <div className='slides-area-container'>
           <Slideshow />
         </div>
-      </div>
+  </div> */ }
 
       <main>
 
         <div className="image-itadori-main">
 
-          <Link to={'https://www.youtube.com/channel/UCn331wBdwv1oApYpa1vOfVw?sub_confirmation=1'} target={'_blank'}><img className='LogoName' src={LogoName} alt="Logo branca ITADORI AMV'S" /></Link>
-          <div className="text-itadori-area">
-
-            <p> If you still don't know my AMVs (Anime Music Videos) channel, I invite you to click on this <Link className='link-color' to={'https://www.youtube.com/channel/UCn331wBdwv1oApYpa1vOfVw?sub_confirmation=1'} target={'_blank'}>link</Link> to learn a little more about it and subscribe so you don't miss any new videos! </p> <br />
-            <p> On my channel, I share amazing AMV videos with the best anime music and scenes. I strive to create high quality content and provide a unique experience for viewers. </p>
-
-          </div>
-
-          <div className="our-animes-text">  <p>In case you wonder what our favorite animes are, here are 4 animes that you will really like, they are our favorite animes from the old days, so I hope you like them if you watch them, if you want to have more information about animes, click on their image ♥</p> <br /> </div>
 
           <div className="new-images">
 
@@ -82,68 +99,73 @@ export default function Home() {
 
           <div className="favorite-animes-container" >
 
-          <h2 data-aos="fade-right" data-aos-duration="800">Favorite Animes 🍿</h2> 
+            <h2 data-aos="fade-right" data-aos-duration="800">TRENDING ANIME NOW 🍿</h2>
 
             <div className="animes-favorite-image">
 
-              <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/19815/No_Game_No_Life?q=no%20game%20no%20life&cat=anime'} target={'_blank'}><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126458419916871/nogame-nolife-test.webp" alt="capa de no game no life" /></Link>
-                <p>No Game No Life</p>
-              </div>
-
-              <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann?q=Tengen%20Toppa%20Gurren-Lagann&cat=anime'} target={'_blank'}><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126465172746321/tengen-test.webp" alt="capa de Tengen Toppa Gurren-Lagann" /></Link>
-                <p>Tengen Toppa Gurren-Lagann</p>
-              </div>
-
-              <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=Full%20Metal%20a&cat=anime'} target='_blank'><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126444083777546/fullmetal-test.webp" alt="capa de Full Metal" /></Link>
-                <p>Fullmetal Alchemist</p>
-              </div>
-
-              <div className="favorite-anime-image">
-                <Link to={'https://myanimelist.net/anime/47917/Bocchi_the_Rock?q=bocchi&cat=anime'} target='_blank'><img src="https://cdn.discordapp.com/attachments/1135126287283920896/1135126436185919519/bocchi-test.webp" alt="capa de Bocchi the Rock!" /></Link>
-                <p>Bocchi the Rock!</p>
-              </div>
+              <TopList/>
 
             </div>
 
           </div>
 
           <div className="span-text-container" >
-            <div className="our-work"> <h1> Who are we? </h1> </div>
 
-            <div className="who-are-we-text"> <span> ITADORI AMV's is proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists. All videos are edited in the highest quality which makes up different scenes from various free commercial animation images! thanks to the animation developers! <br /> <br /> We have a team of Professional Editors focused on editing AMV's for over 8 years, our work has provided impactful narratives for all songs, giving visibility to countless unknown artists through the construction of their Anime Music Videos. <br /> <br /> My goal is to bring another way to enjoy animation by bringing together the two things that youtube audiences love the most, music and animations, and inspire people in that way. <br /> <br /> Want to know what's new in the animation industry? Watch this channel. Want to discover new artists and music genres to listen to? Our channel brings all this and more to you!
-            </span> </div>
+            <div className="our-work">
+
+              <img src={LogoName} className='LogoName' alt="" />
+
+              <div className='h3area'>
+
+                <h3>we are proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists.
+                </h3>
+
+              </div>
+
+              <div>
+
+                <NavLink to={'/about'}><button className='readMore'> READ MORE </button></NavLink>
+
+              </div>
+
+            </div>
+
+            <div className="renderItadori">
+
+              <img className='renderitadorimage' src={RenderIta} alt="render itadori" />
+
+            </div>
+
           </div>
 
-          <div className="partners-text"> <p>If you are looking for great singers, who put all their feelings into their songs, here are our favorite singers, we use their songs in all our videos, they are very talented singers, it's worth listening to all their songs ♥</p> </div>
 
         </div>
 
-        <div className="partners" > <h1> Our Favorite Musicians </h1> </div>
+        <div class="partnercontainerArea" >
 
-        <div class="slide-container-partners" >
+        <div className="partners" > <h1> OUR FAVORITE MUSICIANS </h1> </div>
 
-          <div class="slide">
-            <Link to={'https://www.youtube.com/@3OneOhOfficial'} target={'_blank'}><img src={OneOh} alt="Slide 1" /></Link>
-            <span> 3 ONE OH </span>
-          </div>
-          <div class="slide">
-            <Link to={'https://www.youtube.com/c/Carolinesmusic/featured'} target={'_blank'}><img className='left-space' src={Caroline} alt="Slide 2" /></Link>
-            <span> CAROLINE </span>
-          </div>
-          <div class="slide">
-            <Link to={'https://www.youtube.com/c/Hurshel'} target={'_blank'}><img className='left-space' src={Hurshel} alt="Slide 3" /></Link>
-            <span> HURSHEL </span>
-          </div>
-          <div className="slide">
-            <Link to={'https://www.youtube.com/user/neffexmusic'} target={'_blank'}><img className='left-space' src={Neffex} alt="Slide 4" /></Link>
-            <span> NEFFEX </span>
-          </div>
-          <div className="slide">
-            <Link to={'https://www.youtube.com/c/ScottThePisces'} target={'_blank'}><img className='left-space' src={Scott} alt="Slide 5" /></Link>
-            <span> SCOTT THE PISCES </span>
+          <div className='slide-container-partners'>
+            <div class="slide">
+              <Link to={'https://www.youtube.com/@3OneOhOfficial'} target={'_blank'}><img src={OneOh} alt="Slide 1" /></Link>
+              <span> 3 ONE OH </span>
+            </div>
+            <div class="slide">
+              <Link to={'https://www.youtube.com/c/Carolinesmusic/featured'} target={'_blank'}><img className='left-space' src={Caroline} alt="Slide 2" /></Link>
+              <span> CAROLINE </span>
+            </div>
+            <div class="slide">
+              <Link to={'https://www.youtube.com/c/Hurshel'} target={'_blank'}><img className='left-space' src={Hurshel} alt="Slide 3" /></Link>
+              <span> HURSHEL </span>
+            </div>
+            <div className="slide">
+              <Link to={'https://www.youtube.com/user/neffexmusic'} target={'_blank'}><img className='left-space' src={Neffex} alt="Slide 4" /></Link>
+              <span> NEFFEX </span>
+            </div>
+            <div className="slide">
+              <Link to={'https://www.youtube.com/c/ScottThePisces'} target={'_blank'}><img className='left-space' src={Scott} alt="Slide 5" /></Link>
+              <span> SCOTT THE PISCES </span>
+            </div>
           </div>
 
         </div>

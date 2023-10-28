@@ -1,0 +1,23 @@
+.trandingMain{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+.trandingArea{
+    margin: 4px;
+}
+
+.imagesCapa{
+    border-radius: 6px;
+
+    transition: .5s;
+}
+
+.imagesCapa:hover{
+    transform: scale(.9);
+
+    transition: .5s;
+}
