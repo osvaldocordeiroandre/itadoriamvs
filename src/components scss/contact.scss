@@ -15,6 +15,10 @@
 }
 
 .form-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 8px;
 
@@ -50,7 +54,7 @@
 }
 
 .nome input{
-    width: 400px;
+    width: 800px;
     height: 30px;
     
     padding: 6px;
@@ -73,7 +77,7 @@
 }
 
 .email input{
-    width: 400px;
+    width: 800px;
     height: 30px;
     
     padding: 6px;
@@ -98,21 +102,23 @@
 }
 
 .button-submit input{
-    width: 90px;
-    height: 24px;
+    width: 100px;
+    height: 34px;
 
     border-radius: 4px;
     border: none;
 
     background-color: orange;
 
-    font-weight: 500;
+    font-weight:600;
 
     cursor: pointer;
+
+    color: rgb(85, 56, 1);
 }
 
 .text-area textarea{
-    width: 400px;
+    width: 800px;
 
     resize: none;
 
@@ -145,21 +151,55 @@
 
 
 
-@media (max-width: 506px){
+@media (max-width: 819px){
     .nome input{
-        width: 100%;
+        max-width: 600px;
     }
 
 
     .email input{
-        width: 100%;
+        width: 600px;
     }
 
     .text-area textarea{
-        width: 100%;
+        width: 600px;
     }
 
     .annie{
         opacity: 10%;
     }
+}
+
+@media (max-width: 619px){
+
+    .nome input{
+        max-width: 500px;
+    }
+
+
+    .email input{
+        width: 500px;
+    }
+
+    .text-area textarea{
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 528px){
+
+    .nome input{
+        max-width: 300px;
+    }
+
+
+    .email input{
+        width: 300px;
+    }
+
+    .text-area textarea{
+        width: 300px;
+    }
+
 }
