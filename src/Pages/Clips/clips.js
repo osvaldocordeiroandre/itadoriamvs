@@ -145,6 +145,19 @@ export default function Clips() {
     setCurrentPage((proximaPagina) => Math.min(proximaPagina + 1, totalPaginas))
   }
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [iframeSrc, setIframeSrc] = useState("");
+
+  const openPopup = (src) => {
+    setIframeSrc(src);
+    setIsOpen(true)
+  }
+
+  const closePopup = () => {
+    setIframeSrc("");
+    setIsOpen(false);
+  }
+
   return (
     <div onLoad={handleImageLoad} id='content-all'>
 
@@ -168,11 +181,21 @@ export default function Clips() {
 
           <div className='spance-capas' key={anime.id}>
 
-            <a href={anime.link} target='_blank' rel="noopener noreferrer" ><img className='anime-images' src={anime.imagem} alt={anime.nome} /></a>
+            <a href="#" rel="noopener noreferrer" ><img className='anime-images' onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} /></a>
 
           </div>
 
         ))}
+
+        {isOpen && (
+          <div className="popup">
+
+            <button onClick={closePopup}> X </button>
+
+            <iframe src={iframeSrc} frameborder="0"></iframe>
+
+          </div>
+        )}
 
       </div>
 

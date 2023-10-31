@@ -171,3 +171,45 @@
   .paginas button:hover{
     background-color: #9c9c9c;
   }
+
+  .popup{
+    position: fixed;
+    top: 25%;
+
+    z-index: 2000;
+  }
+
+  .popup iframe{
+    width: 50vw;
+    height: 60vh;
+
+    border-radius: 8px;
+
+    position: relative;
+  }
+
+  .popup button{
+    position: absolute;
+
+    z-index: 2000;
+
+    color: white;
+
+    background-color: black;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 30px;
+
+    margin: 5px;
+
+    cursor: pointer;
+
+    transition: .5s;
+  }
+
+  .popup button:hover{
+    transform: scale(.8);
+    transition: .5s;
+  }
