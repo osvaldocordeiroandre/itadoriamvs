@@ -5,6 +5,8 @@ import { MdFirstPage, MdLastPage } from 'react-icons/md';
 import '../../components scss/clips.scss';
 import Header from '../../components/Header/Header'
 
+import Loading from '../../Assets/gif/loading.gif'
+
 import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
@@ -89,6 +91,9 @@ export default function Clips() {
   const [currentPage, setCurrentPage] = useState(1);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const images = document.querySelectorAll('.anime-images');
@@ -158,6 +163,15 @@ export default function Clips() {
     setIsOpen(false);
   }
 
+  const handleIframeLoad = () => {
+    setIsLoading(false)
+    setIframeLoaded(true);
+  }
+
+  const handleImageClick = () => {
+    setIsLoading(true);
+  }
+
   return (
     <div onLoad={handleImageLoad} id='content-all'>
 
@@ -181,18 +195,28 @@ export default function Clips() {
 
           <div className='spance-capas' key={anime.id}>
 
-            <a href="#" rel="noopener noreferrer" ><img className='anime-images' onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} /></a>
+           <img className='anime-images' onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} />
 
           </div>
 
         ))}
 
+        {isLoading && (
+
+          <div className="loadingOverlay" onClick={handleImageClick} >
+
+            <img src={Loading} alt="loading" />
+
+          </div>
+
+        )}
+
         {isOpen && (
-          <div className="popup">
+          <div className="popup" onLoad={handleIframeLoad} style={{display: iframeLoaded ? 'block' : 'none'}}>
 
             <button onClick={closePopup}> X </button>
 
-            <iframe src={iframeSrc} frameborder="0"></iframe>
+            <iframe src={iframeSrc} frameborder="0" ></iframe>
 
           </div>
         )}
