@@ -220,7 +220,18 @@
 
   .loadingOverlay{
     position: fixed;
-    top: 25%;
+    top: 55%;
 
     z-index: 2000;
+  }
+
+  .loadingOverlay img {
+    background-color: white;
+    border-radius: 50px;
+
+    width: 200px;
+    height: 50px;
+
+    object-fit: cover;
+
   }

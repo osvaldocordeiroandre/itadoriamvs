@@ -91,9 +91,6 @@ export default function Clips() {
   const [currentPage, setCurrentPage] = useState(1);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  const [isLoading, setIsLoading] = useState(false);
-  const [iframeLoaded, setIframeLoaded] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const images = document.querySelectorAll('.anime-images');
@@ -161,15 +158,21 @@ export default function Clips() {
   const closePopup = () => {
     setIframeSrc("");
     setIsOpen(false);
+    setIframeLoad(false)
   }
 
-  const handleIframeLoad = () => {
-    setIsLoading(false)
-    setIframeLoaded(true);
+  const [load, setLoad] = useState(false);
+  const [iframeLoad, setIframeLoad] = useState(false)
+
+  const handleClickImage = () =>{
+
+    setLoad(true)
+
   }
 
-  const handleImageClick = () => {
-    setIsLoading(true);
+  const handLoad = () => {
+    setIframeLoad(true)
+    setLoad(false)
   }
 
   return (
@@ -193,7 +196,7 @@ export default function Clips() {
 
         {animesPaginaAtual.map((anime) => (
 
-          <div className='spance-capas' key={anime.id}>
+          <div className='spance-capas' onClick={handleClickImage} key={anime.id}>
 
            <img className='anime-images' onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} />
 
@@ -201,9 +204,9 @@ export default function Clips() {
 
         ))}
 
-        {isLoading && (
+        {load && (
 
-          <div className="loadingOverlay" onClick={handleImageClick} >
+          <div className="loadingOverlay">
 
             <img src={Loading} alt="loading" />
 
@@ -212,7 +215,7 @@ export default function Clips() {
         )}
 
         {isOpen && (
-          <div className="popup" onLoad={handleIframeLoad} style={{display: iframeLoaded ? 'block' : 'none'}}>
+          <div className="popup" onLoad={handLoad} style={{display: iframeLoad ? 'block' : "none"}}>
 
             <button onClick={closePopup}> X </button>
 
