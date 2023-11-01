@@ -7,24 +7,20 @@ export default function Randonvideo() {
 
     const videoUrls = [
 
-        'https://www.youtube.com/watch?v=NG5_I-Wzfn8',
-        'https://www.youtube.com/watch?v=2wDzFLMGLwE',
+        'https://www.youtube.com/watch?v=SqcUixL97d0',
+        'https://www.youtube.com/watch?v=rZj7QKlqGig',
+        'https://www.youtube.com/watch?v=60ewJ2yEoNI',
+        'https://www.youtube.com/watch?v=pVDUSwCOAO0',
+        'https://www.youtube.com/watch?v=-H9G7EzwShE',
+        'https://www.youtube.com/watch?v=JokUMSmOxfg',
+        'https://www.youtube.com/watch?v=Zu4KpfFoCow',
         'https://www.youtube.com/watch?v=E-UVvnaSVvw',
         'https://www.youtube.com/watch?v=KqtYrvbTKzU',
-        'https://www.youtube.com/watch?v=-3iko82au3Q',
-        'https://www.youtube.com/watch?v=ww63_Aii-Zs',
         'https://www.youtube.com/watch?v=067S_uyHD_Y',
         'https://www.youtube.com/watch?v=wNxRo7S73PQ',
         'https://www.youtube.com/watch?v=AvNkiJsM30s',
-        'https://www.youtube.com/watch?v=Qp4EgujQR8Q',
-        'https://www.youtube.com/watch?v=9nEURPGRBiM',
-        'https://www.youtube.com/watch?v=rIHRKNGLHy4',
         'https://www.youtube.com/watch?v=c6YHXtHzvQg',
-        'https://www.youtube.com/watch?v=kbemT8URwzE',
-        'https://www.youtube.com/watch?v=746Hi3nHm84',
-        'https://www.youtube.com/watch?v=99rxlCwC070',
-        'https://www.youtube.com/watch?v=q7-NPDQ6YA4',
-        'https://www.youtube.com/watch?v=12vU0ZxmVFY'
+        'https://www.youtube.com/watch?v=12vU0ZxmVFY',
 
     ];
 

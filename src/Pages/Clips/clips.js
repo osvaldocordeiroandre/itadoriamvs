@@ -163,6 +163,13 @@ export default function Clips() {
 
   const [load, setLoad] = useState(false);
   const [iframeLoad, setIframeLoad] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [contentLoading, setContentLoading] = useState(false)
+
+  const handleLoading = () => {
+    setLoading(false)
+    setContentLoading(true)
+  }
 
   const handleClickImage = () => {
 
@@ -196,7 +203,17 @@ export default function Clips() {
 
       {showmensagem && <p className='error-search'> Anime not found... </p>}
 
-      <div className='anime-space-content'>
+      {loading && (
+
+        <div className="loadingOverlay">
+
+          loading...
+
+        </div>
+
+      )}
+
+      <div className='anime-space-content' onLoad={handleLoading} style={{ display: contentLoading ? 'flex' : 'none' }}>
 
         {animesPaginaAtual.map((anime) => (
 
