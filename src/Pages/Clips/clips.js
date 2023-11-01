@@ -215,6 +215,12 @@ export default function Clips() {
 
       <div className='anime-space-content' onLoad={handleLoading} style={{ display: contentLoading ? 'flex' : 'none' }}>
 
+        <div className="paginas" id='pagesid'>
+          <button onClick={irParaPaginaAnterior} disabled={currentPage === 1} > <MdFirstPage fill='black' /> </button>
+          <span id='contagem'>{`${currentPage} / ${totalPaginas}`}</span>
+          <button onClick={irParaProximaPagina} disabled={currentPage === totalPaginas} > <MdLastPage fill='black' /> </button>
+        </div>
+
         {animesPaginaAtual.map((anime) => (
 
           <div className='spance-capas' onClick={handleClickImage} key={anime.id}>
@@ -222,6 +228,8 @@ export default function Clips() {
             <img className='anime-images' onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} />
 
           </div>
+
+
 
         ))}
 
@@ -245,12 +253,6 @@ export default function Clips() {
           </div>
         )}
 
-      </div>
-
-      <div className="paginas" id='pagesid'>
-        <button onClick={irParaPaginaAnterior} disabled={currentPage === 1} > <MdFirstPage fill='black' /> </button>
-        <span id='contagem'>{`${currentPage} / ${totalPaginas}`}</span>
-        <button onClick={irParaProximaPagina} disabled={currentPage === totalPaginas} > <MdLastPage fill='black' /> </button>
       </div>
 
     </div>
