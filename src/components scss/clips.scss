@@ -87,6 +87,16 @@
     transition: .5s ;
 
     cursor: pointer;
+
+    animation: OpacityImages 1s;
+  }
+
+  @keyframes OpacityImages{
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
   }
   
   .hidden{
