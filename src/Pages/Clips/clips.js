@@ -5,12 +5,12 @@ import { MdFirstPage, MdLastPage } from 'react-icons/md';
 import '../../components scss/clips.scss';
 import Header from '../../components/Header/Header'
 
-import Loading from '../../Assets/gif/loading.gif'
-
 import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
   const animes = [
+    {id:'75', nome:'Violet Movies', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1169108988886003732/Violet-Movies.webp?ex=65543497&is=6541bf97&hm=d5a007cc2bade5d8c3cb4de4f0bc60527c10db61ef013968d3b175d5740dfc4c&', link:'https://www.playbook.com/s/ajksz/QaSN9y1br7G8ymCf9VWj4GgB'},
+    {id:'74', nome:'Violet Evergarden', imagem:'https://cdn.discordapp.com/attachments/1135116775051239434/1169108969474769016/Violet-S1.webp?ex=65543493&is=6541bf93&hm=cc9ce657556823bbf61d655759cb906de16d2366a4a8630d78a4a99df37e8367&', link:'https://www.playbook.com/s/ajksz/kBdr4JkLjwB4kQS3XB2kihyz'},
     { id: '73', nome: 'Jujutsu Kaisen 0', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1139899403021320242/jujutsu-kaisen-0.webp', link: 'https://www.playbook.com/s/ajksz/KGCYWcyNQDCWfNmhjCFJHq79' },
     { id: '72', nome: 'Zankyō no Terror, Zankyou no Terror', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1139899371127853156/zanky197141-no-terror.webp', link: 'https://www.playbook.com/s/ajksz/onsCyDkS3xuQAA51uq5wt8Fg' },
     { id: '71', nome: 'Weathering with You, Tenki no Ko', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1137197194013851709/weathering-with-you.webp', link: 'https://www.playbook.com/s/ajksz/ZTPx8Z4VMPyniu5VRFGzEkqB' },
