@@ -228,12 +228,12 @@ export default function Clips() {
           </div>
         )}
 
-        <div className="paginas" id='pagesid'>
-          <button onClick={irParaPaginaAnterior} disabled={currentPage === 1} > <MdFirstPage fill='black' /> </button>
-          <span id='contagem'>{`${currentPage} / ${totalPaginas}`}</span>
-          <button onClick={irParaProximaPagina} disabled={currentPage === totalPaginas} > <MdLastPage fill='black' /> </button>
-        </div>
+      </div>
 
+      <div className="paginas" id='pagesid'>
+        <button onClick={irParaPaginaAnterior} disabled={currentPage === 1} > <MdFirstPage fill='black' /> </button>
+        <span id='contagem'>{`${currentPage} / ${totalPaginas}`}</span>
+        <button onClick={irParaProximaPagina} disabled={currentPage === totalPaginas} > <MdLastPage fill='black' /> </button>
       </div>
 
     </div>
