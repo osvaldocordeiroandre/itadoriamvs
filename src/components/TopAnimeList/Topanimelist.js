@@ -32,7 +32,7 @@ const TopAnimeList = () => {
     <div className='trandingMain'>
       
         <motion.div className='carousel'>
-          <motion.div className='inner' drag="x" dragConstraints={{right: 300, left: -300}}>
+          <motion.div className='inner' drag="x" dragConstraints={{right: 400, left: -400}}>
             {animeData.slice(0, 5).map((anime) => (
 
                 <motion.div className='trandingArea' key={anime.mel_id}>

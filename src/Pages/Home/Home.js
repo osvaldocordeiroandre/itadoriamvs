@@ -159,7 +159,7 @@ export default function Home() {
 
           <div className='slide-container-partners'>
             <motion.div className='carousel'>
-              <motion.div className='inner' drag="x" dragConstraints={{right:100, left: -600}}>
+              <motion.div className='inner' drag="x" dragConstraints={{right:50, left: -700}}>
                 
                 {partnersAll.map((allpart) => (
 
