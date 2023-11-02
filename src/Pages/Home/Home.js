@@ -23,7 +23,19 @@ import Clipsimage from '../../Assets/new designer/clips.webp'
 import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
 import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
+import { motion } from 'framer-motion'
+
 export default function Home() {
+
+  const partnersAll = [
+
+    {nome:'3 ONE OH', imagem:[OneOh], link:'https://www.youtube.com/@3OneOhOfficial'},
+    {nome:'CAROLINE', imagem:[Caroline], link:'ps://www.youtube.com/c/Carolinesmusic'},
+    {nome:'HURSHEL', imagem:[Hurshel], link:'https://www.youtube.com/c/Hurshel'},
+    {nome:'NEFFEX', imagem:[Neffex], link:'https://www.youtube.com/user/neffexmusic'},
+    {nome:'SCOTT THE PISCES', imagem:[Scott], link:'ttps://www.youtube.com/c/ScottThePisce'},
+  
+  ]
 
   return (
     <div className="container">
@@ -146,26 +158,27 @@ export default function Home() {
         <div className="partners" > <h1> OUR FAVORITE MUSICIANS </h1> </div>
 
           <div className='slide-container-partners'>
-            <div class="slide">
-              <Link to={'https://www.youtube.com/@3OneOhOfficial'} target={'_blank'}><img src={OneOh} alt="Slide 1" /></Link>
-              <span> 3 ONE OH </span>
-            </div>
-            <div class="slide">
-              <Link to={'https://www.youtube.com/c/Carolinesmusic/featured'} target={'_blank'}><img className='left-space' src={Caroline} alt="Slide 2" /></Link>
-              <span> CAROLINE </span>
-            </div>
-            <div class="slide">
-              <Link to={'https://www.youtube.com/c/Hurshel'} target={'_blank'}><img className='left-space' src={Hurshel} alt="Slide 3" /></Link>
-              <span> HURSHEL </span>
-            </div>
-            <div className="slide">
-              <Link to={'https://www.youtube.com/user/neffexmusic'} target={'_blank'}><img className='left-space' src={Neffex} alt="Slide 4" /></Link>
-              <span> NEFFEX </span>
-            </div>
-            <div className="slide">
-              <Link to={'https://www.youtube.com/c/ScottThePisces'} target={'_blank'}><img className='left-space' src={Scott} alt="Slide 5" /></Link>
-              <span> SCOTT THE PISCES </span>
-            </div>
+            <motion.div className='carousel'>
+              <motion.div className='inner' drag="x" dragConstraints={{right:100, left: -600}}>
+                
+                {partnersAll.map((allpart) => (
+
+                  <motion.div className='item' key={allpart.nome}>
+
+                    <div className="slide">
+
+                      <a href={allpart.link} target='_blank'><img src={allpart.imagem} className='naosei' alt="" /></a>
+
+                      <span> {allpart.nome} </span>
+
+                    </div>
+
+                  </motion.div>
+
+                ))}
+                
+              </motion.div>
+            </motion.div>
           </div>
 
         </div>
