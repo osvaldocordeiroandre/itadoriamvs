@@ -30,10 +30,10 @@ export default function Home() {
   const partnersAll = [
 
     {nome:'3 ONE OH', imagem:[OneOh], link:'https://www.youtube.com/@3OneOhOfficial'},
-    {nome:'CAROLINE', imagem:[Caroline], link:'ps://www.youtube.com/c/Carolinesmusic'},
+    {nome:'CAROLINE', imagem:[Caroline], link:'https://www.youtube.com/c/Carolinesmusic'},
     {nome:'HURSHEL', imagem:[Hurshel], link:'https://www.youtube.com/c/Hurshel'},
     {nome:'NEFFEX', imagem:[Neffex], link:'https://www.youtube.com/user/neffexmusic'},
-    {nome:'SCOTT THE PISCES', imagem:[Scott], link:'ttps://www.youtube.com/c/ScottThePisce'},
+    {nome:'SCOTT THE PISCES', imagem:[Scott], link:'https://www.youtube.com/@ScottThePisces'},
   
   ]
 
