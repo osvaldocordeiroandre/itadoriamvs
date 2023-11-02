@@ -9,7 +9,6 @@ import axios from 'axios';
 
 const TopAnimeList = () => {
   const [animeData, setAnimeData] = useState([]);
-  const [width, setWidth] = useState(0);
 
   useEffect(() => {
     // Fazer uma solicitação GET para a API Jikan.
@@ -28,21 +27,69 @@ const TopAnimeList = () => {
 
   }, []);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [iframeSrc, setIframeSrc] = useState("");
+
+  const openPopup = (src) => {
+    setIframeSrc(src);
+    setIsOpen(true);
+  }
+
+  const closePopup = () => {
+    setIframeSrc("");
+    setIsOpen(false);
+    setIframeLoad(false);
+  }
+
+  const [iframeLoad, setIframeLoad] = useState(false)
+  const [load, setLoad] = useState(false)
+
+  const handleClickImage = () => {
+    setLoad(true)
+  }
+
+  const handLoad = () => {
+    setLoad(false)
+    setIframeLoad(true);
+  }
+
+
+
   return (
     <div className='trandingMain'>
-      
-        <motion.div className='carousel'>
-          <motion.div className='inner' drag="x" dragConstraints={{right: 400, left: -400}}>
-            {animeData.slice(0, 5).map((anime) => (
 
-                <motion.div className='trandingArea' key={anime.mel_id}>
-                    <a href={anime.trailer.url} target='_blank'><img className='imagesCapa' src={anime.images.jpg.image_url} alt={anime.title} /></a>
-                </motion.div>
-          
-            ))}
-          </motion.div>
+      <motion.div className='carousel'>
+        <motion.div className='inner' drag="x" dragConstraints={{ right: 400, left: -400 }}>
+          {animeData.slice(0, 5).map((anime) => (
+
+            <motion.div className='trandingArea' onClick={handleClickImage} key={anime.mel_id}>
+              <img className='imagesCapa' onClick={() => openPopup(anime.trailer.embed_url)} src={anime.images.jpg.image_url} alt={anime.title} />
+            </motion.div>
+
+          ))}
         </motion.div>
-      
+      </motion.div>
+
+      {load && (
+
+        <div className="loadingOverlay">
+
+          <span class="loader"></span>
+
+        </div>
+
+      )}
+
+      {isOpen && (
+        <div className="popup" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
+
+          <button onClick={closePopup}> X </button>
+
+          <iframe src={iframeSrc} frameborder="0" ></iframe>
+
+        </div>
+      )}
+
     </div>
   );
 };
