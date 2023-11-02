@@ -14,14 +14,14 @@ import Caroline from '../../Assets/Partner Artists/Caroline.webp'
 import Hurshel from '../../Assets/Partner Artists/Hurshel.webp'
 import Neffex from '../../Assets/Partner Artists/NEFFEX.webp'
 import Scott from '../../Assets/Partner Artists/Scott-the -pisces.webp'
-import LoveNow from '../../Assets/new designer/love-me-now.png'
-import Evertything from '../../Assets/new designer/everything-goes-on.png'
-import OceanBlue from '../../Assets/new designer/ocean-blue.png'
-import paradise from '../../Assets/new designer/so-this-is-paradise.png'
-import Clipsimage from '../../Assets/new designer/clips.png'
+import LoveNow from '../../Assets/new designer/love-me-now.webp'
+import Evertything from '../../Assets/new designer/everything-goes-on.webp'
+import OceanBlue from '../../Assets/new designer/ocean-blue.webp'
+import paradise from '../../Assets/new designer/so-this-is-paradise.webp'
+import Clipsimage from '../../Assets/new designer/clips.webp'
 
 import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
-import RenderIta from '../../Assets/Imagens/render_itadori.png'
+import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
 export default function Home() {
 

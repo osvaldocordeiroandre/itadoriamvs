@@ -10,7 +10,7 @@ import After from '../../Assets/Softwares/after.webp'
 import Ps from '../../Assets/Softwares/ps-new-color.webp'
 import Davinci from '../../Assets/Softwares/davinci-new-color.webp'
 import CapCut from '../../Assets/Softwares/capcut-new-color.webp'
-import Render from '../../Assets/Imagens/render_itadori.png'
+import Render from '../../Assets/Imagens/render-itadori.webp'
 
 import '../../components scss/about.scss'
 import ScrollToTop from 'react-scroll-to-top'
