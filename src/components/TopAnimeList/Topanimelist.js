@@ -81,11 +81,11 @@ const TopAnimeList = () => {
       )}
 
       {isOpen && (
-        <div className="popup" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
+        <div className="popup2" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
 
           <button onClick={closePopup}> X </button>
 
-          <iframe src={iframeSrc} frameborder="0" ></iframe>
+          <iframe src={iframeSrc} frameborder="0"  allowFullScreen></iframe>
 
         </div>
       )}

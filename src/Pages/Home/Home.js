@@ -25,6 +25,11 @@ import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
 import { motion } from 'framer-motion'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+import { useLayoutEffect } from 'react'
+
 export default function Home() {
 
   const partnersAll = [
