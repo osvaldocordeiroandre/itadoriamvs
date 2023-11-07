@@ -201,6 +201,8 @@
     top: 25%;
 
     z-index: 2000;
+
+    overflow: hidden;
   }
 
   .popup iframe{
@@ -242,7 +244,7 @@
   }
 
   .addanimaiton{
-    animation: chibi 4s;
+    animation: chibi 6s;
 
     position: absolute;
     right: 0;
@@ -261,7 +263,7 @@
 
     transition: .5s;
 
-    animation: move 1.4s infinite ease-in-out;
+    animation: move 1.4s infinite ease-in;
   }
 
   @keyframes move {
