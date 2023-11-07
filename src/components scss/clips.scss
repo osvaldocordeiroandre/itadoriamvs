@@ -241,6 +241,49 @@
     transition: .5s;
   }
 
+  .addanimaiton{
+    animation: chibi 4s;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    margin-right: 30px;
+
+    z-index: 2000;
+
+  }
+
+  .teach{
+
+    max-width: 300px;
+    width: 100%;
+
+    transition: .5s;
+
+    animation: move 1.4s infinite ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(-1px);
+    } 50% {
+      transform: translateY(1px);
+    } 100%{
+      transform: translateY(-1px);
+    }
+  }
+
+  @keyframes chibi {
+    from{
+      transform: translateX(100px);
+      opacity: 0;
+    } to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
   .loadingOverlay{
     position: fixed;
     top: 55%;

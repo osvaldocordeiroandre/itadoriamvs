@@ -5,6 +5,8 @@ import { MdFirstPage, MdLastPage } from 'react-icons/md';
 import '../../components scss/clips.scss';
 import Header from '../../components/Header/Header'
 
+import itadorin from '../../Assets/Imagens/itadori-teach.webp'
+
 import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
@@ -245,6 +247,8 @@ export default function Clips() {
 
         {isOpen && (
           <div className="popup" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
+
+            <div className='addanimaiton'><img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} /></div>
 
             <button onClick={closePopup}> X </button>
 
