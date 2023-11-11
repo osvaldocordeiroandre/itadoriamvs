@@ -239,7 +239,7 @@ export default function Clips() {
 
           <div className="loadingOverlay">
 
-            <span class="loader"></span>
+            <span className="loader"></span>
 
           </div>
 
@@ -252,7 +252,7 @@ export default function Clips() {
 
             <button onClick={closePopup}> X </button>
 
-            <iframe src={iframeSrc} frameborder="0" ></iframe>
+            <iframe src={iframeSrc} frameborder="0" title='clips area' ></iframe>
 
           </div>
         )}

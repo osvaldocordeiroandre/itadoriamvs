@@ -3,7 +3,6 @@ import Footer from '../../components/Footer/Footer'
 import TopList from '../../components/TopAnimeList/Topanimelist'
 
 import '../../components scss/home.scss'
-import Slideshow from '../../Slide/Slide'
 
 import { Link, NavLink } from 'react-router-dom'
 import ScrollToTop from 'react-scroll-to-top'
@@ -24,11 +23,6 @@ import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
 import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
 import { motion } from 'framer-motion'
-
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-import { useLayoutEffect } from 'react'
 
 export default function Home() {
 
@@ -158,7 +152,7 @@ export default function Home() {
 
         </div>
 
-        <div class="partnercontainerArea" >
+        <div className="partnercontainerArea" >
 
         <div className="partners" > <h1> OUR FAVORITE MUSICIANS </h1> </div>
 
@@ -172,7 +166,7 @@ export default function Home() {
 
                     <div className="slide">
 
-                      <a href={allpart.link} target='_blank'><img src={allpart.imagem} className='naosei' alt="" /></a>
+                      <a href={allpart.link} target='_blank' rel='noreferrer'><img src={allpart.imagem} className='naosei' alt="" /></a>
 
                       <span> {allpart.nome} </span>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../../components scss/topAnimeList.scss'
 
@@ -62,7 +62,7 @@ const TopAnimeList = () => {
         <motion.div className='inner' drag="x" dragConstraints={{ right: 400, left: -400 }}>
           {animeData.slice(0, 5).map((anime) => (
 
-            <motion.div className='trandingArea' onClick={handleClickImage} key={anime.mel_id}>
+            <motion.div className='trandingArea' onClick={handleClickImage} key={anime.mal_id}>
               <img className='imagesCapa' onClick={() => openPopup(anime.trailer.embed_url)} src={anime.images.jpg.image_url} alt={anime.title} />
             </motion.div>
 
@@ -74,7 +74,7 @@ const TopAnimeList = () => {
 
         <div className="loadingOverlay">
 
-          <span class="loader"></span>
+          <span className="loader"></span>
 
         </div>
 
@@ -85,7 +85,7 @@ const TopAnimeList = () => {
 
           <button onClick={closePopup}> X </button>
 
-          <iframe src={iframeSrc} frameborder="0"  allowFullScreen></iframe>
+          <iframe src={iframeSrc} frameborder="0" title='iframe for anime trailer vídeos' allowFullScreen></iframe>
 
         </div>
       )}
