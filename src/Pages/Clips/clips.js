@@ -185,12 +185,8 @@ export default function Clips() {
     setLoad(false)
   }
 
-  const removePopup = () => {
-    setIframeLoad(false)
-  }
-
   return (
-    <div onLoad={handleImageLoad} id='content-all' onClick={removePopup}>
+    <div onLoad={handleImageLoad} id='content-all' >
 
       {imagesLoaded && (
         <>
