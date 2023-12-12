@@ -251,11 +251,11 @@ export default function Clips() {
         {isOpen && (
           <div className="popup" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
 
-            <div className='addanimaiton' onClick={removeItadorin} style={{ display: itadorinOpen ? 'block' : 'none'}}>
+            <div className='addanimaiton' >
 
-              <img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} />
+              <img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} style={{ display: itadorinOpen ? 'block' : 'none'}} />
 
-              <button> X </button>
+              <button onClick={removeItadorin}> X </button>
 
             </div>
 
