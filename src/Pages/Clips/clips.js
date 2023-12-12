@@ -152,6 +152,11 @@ export default function Clips() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [iframeSrc, setIframeSrc] = useState("");
+  const [ itadorinOpen, setItadorinOpen] = useState(true)
+
+  const removeItadorin = () => {
+    setItadorinOpen(false)
+  }
 
   const openPopup = (src) => {
     setIframeSrc(src);
@@ -162,6 +167,7 @@ export default function Clips() {
     setIframeSrc("");
     setIsOpen(false);
     setIframeLoad(false)
+    setItadorinOpen(true)
   }
 
   const [load, setLoad] = useState(false);
@@ -245,7 +251,13 @@ export default function Clips() {
         {isOpen && (
           <div className="popup" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
 
-            <div className='addanimaiton'><img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} /></div>
+            <div className='addanimaiton' onClick={removeItadorin} style={{ display: itadorinOpen ? 'block' : 'none'}}>
+
+              <img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} />
+
+              <button> X </button>
+
+            </div>
 
             <button onClick={closePopup}> X </button>
 
