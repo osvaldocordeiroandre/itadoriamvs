@@ -57,7 +57,7 @@ export default function Home() {
           <div className="itadori-analustic">
 
             <h2 className='itadoriAnalystic'><strong>analytics</strong> 📊</h2>
-            <h1 className='dados' > <strong> 📺 77k+ subscribers <br /> 👀 20M+ views </strong> </h1>
+            <h1 className='dados' > <strong> 📺 80k+ subscribers <br /> 👀 22M+ views </strong> </h1>
 
           </div>
 
