@@ -11,6 +11,7 @@ import ScrollToTop from 'react-scroll-to-top';
 
 export default function Clips() {
   const animes = [
+    { id: '77', nome: 'Shangri-La Frontier', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1185347955314655293/shangri-la-frontier.webp?ex=658f484f&is=657cd34f&hm=fb3ac91ed052a37f8f84abf17418bce4637a6866a939d787bc9d497ee05e5fc3&', link: 'https://www.playbook.com/s/ajksz/rzC1dmhQuyVBW5ZZx1FeGvgS' },
     { id: '76', nome: 'Ragna Crimson, ', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1180650436668170280/Ragna-Crimson-S1.webp?ex=657e3167&is=656bbc67&hm=873b995cf81269eede224c695e24f88fa5bb05cbbfd7a2931b82946b6e96f4bf&', link: 'https://www.playbook.com/s/ajksz/eNFdihFCFStXUnYVaeux45tZ' },
     { id: '75', nome: 'Violet Movies', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1169108988886003732/Violet-Movies.webp?ex=65543497&is=6541bf97&hm=d5a007cc2bade5d8c3cb4de4f0bc60527c10db61ef013968d3b175d5740dfc4c&', link: 'https://www.playbook.com/s/ajksz/QaSN9y1br7G8ymCf9VWj4GgB' },
     { id: '74', nome: 'Violet Evergarden', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1169108969474769016/Violet-S1.webp?ex=65543493&is=6541bf93&hm=cc9ce657556823bbf61d655759cb906de16d2366a4a8630d78a4a99df37e8367&', link: 'https://www.playbook.com/s/ajksz/kBdr4JkLjwB4kQS3XB2kihyz' },
@@ -152,7 +153,7 @@ export default function Clips() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [iframeSrc, setIframeSrc] = useState("");
-  const [ itadorinOpen, setItadorinOpen] = useState(true)
+  const [itadorinOpen, setItadorinOpen] = useState(true)
 
   const removeItadorin = () => {
     setItadorinOpen(false)
@@ -253,7 +254,7 @@ export default function Clips() {
 
             <div className='addanimaiton' >
 
-              <img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} style={{ display: itadorinOpen ? 'block' : 'none'}} />
+              <img src={itadorin} className='teach' alt="como fazer download dos clips" onLoad={handLoad} style={{ display: itadorinOpen ? 'block' : 'none' }} />
 
               <button onClick={removeItadorin}> X </button>
 
