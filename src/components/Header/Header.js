@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Link, useLocation, NavLink } from 'react-router-dom'
 
@@ -15,10 +15,22 @@ export default function Header() {
   const [activeLink, setActiveLink] = useState('');
 
   const [itensDisplay, setItensDisplay] = useState('none');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handlekClick() {
     setItensDisplay(prevDisplay => prevDisplay === 'none' ? 'block' : 'none');
+    setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen);
   }
+
+useEffect(() => {
+
+  if (isMenuOpen) {
+    document.body.classList.add('overflow-hidden');
+  } else {
+    document.body.classList.remove('overflow-hidden');
+  }
+
+}, [isMenuOpen])
 
   return (
     <header>
