@@ -1,11 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 
-import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
-import Logo from '../../Assets/Imagens/Itadori_Logo_braca.webp'
 import After from '../../Assets/Softwares/after.webp'
 import Ps from '../../Assets/Softwares/ps-new-color.webp'
 import Davinci from '../../Assets/Softwares/davinci-new-color.webp'
