@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Link, useLocation, NavLink } from 'react-router-dom'
+import { useLocation, NavLink } from 'react-router-dom'
 
 import '../../components scss/header.scss'
 
@@ -35,7 +35,8 @@ useEffect(() => {
   return (
     <header>
 
-      <div className="logo-name"> <Link to={'/'}><img className='name-logo' src={Logo} alt="Logo itadori amv's branca" /></Link> </div>
+      <div className="logo-name"> <NavLink to={'/'} onClick={() => setActiveLink('/')}><img className='name-logo' src={Logo} alt="Logo itadori amv's branca" /></NavLink> </div>
+
       <menu className='itens'>
 
         <ul className='ul-itens'>
