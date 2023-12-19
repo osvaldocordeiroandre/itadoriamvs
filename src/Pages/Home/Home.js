@@ -1,5 +1,3 @@
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import TopList from '../../components/TopAnimeList/Topanimelist'
 
 import '../../components scss/home.scss'
@@ -40,8 +38,6 @@ export default function Home() {
     <div className="container">
 
       <ScrollToTop />
-
-      <Header />
 
       <div className="video-itadori">
         <div className='itadoall'>
@@ -184,8 +180,6 @@ export default function Home() {
 
 
       </main>
-
-      <Footer />
 
 
     </div>

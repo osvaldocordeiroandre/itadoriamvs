@@ -1,8 +1,5 @@
 import React from 'react'
 
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
-
 import After from '../../Assets/Softwares/after.webp'
 import Ps from '../../Assets/Softwares/ps-new-color.webp'
 import Davinci from '../../Assets/Softwares/davinci-new-color.webp'
@@ -18,8 +15,6 @@ export default function About() {
     <div className='allaboutus'>
 
       <ScrollToTop />
-
-      <Header />
 
       <div className="infos">
 
@@ -65,8 +60,6 @@ export default function About() {
 
 
       </div>
-
-      <Footer />
 
     </div>
   )

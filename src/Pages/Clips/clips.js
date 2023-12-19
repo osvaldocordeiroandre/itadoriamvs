@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { MdFirstPage, MdLastPage } from 'react-icons/md';
 
 import '../../components scss/clips.scss';
-import Header from '../../components/Header/Header'
 
 import itadorin from '../../Assets/Imagens/itadori-teach.webp'
 
@@ -197,7 +196,6 @@ export default function Clips() {
 
       {imagesLoaded && (
         <>
-          <Header />
 
           <div className='search-content'>
             <input className='search-part' type="text" name="" id="" placeholder='Anime name...' onChange={handleSearch} />

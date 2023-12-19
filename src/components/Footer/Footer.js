@@ -5,8 +5,6 @@ import { AiFillYoutube, AiFillInstagram } from 'react-icons/ai'
 import { BsDiscord } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-import BannerIta from '../../Assets/Imagens/Banner_End_Itadori.webp'
-
 export default function Footer() {
 
     const year = new Date().getFullYear();

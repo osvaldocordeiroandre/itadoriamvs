@@ -3,9 +3,6 @@ import '../../components scss/contact.scss'
 
 import { useState } from 'react'
 
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
-
 import emailjs from '@emailjs/browser'
 import ScrollToTop from 'react-scroll-to-top'
 
@@ -57,8 +54,6 @@ export default function Contact() {
 
       <ScrollToTop/>
 
-      <Header/>
-
       <div className="contact-main">
 
         <div className="contact-span"> <h1> CONTACT </h1> </div>
@@ -76,8 +71,6 @@ export default function Contact() {
         </form>
 
       </div>
-
-      <Footer/>
 
     </div>
 
