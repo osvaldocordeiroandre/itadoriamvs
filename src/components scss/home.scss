@@ -335,11 +335,11 @@
 
 @keyframes Opacityx{
     from{
-        transform: translateY(10px);
-        opacity: 0;
+        padding-top: 80px;
+
     } to {
-        transform: translateY(0px);
-        opacity: 1;
+        padding-top: 0px;
+
     }
 }
 
