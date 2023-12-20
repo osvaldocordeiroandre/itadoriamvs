@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import '../../components scss/randomvideo.scss'
 
 import { GiPerspectiveDiceSixFacesRandom } from 'react-icons/gi'
-import { DarkModeContext, DarkModeProvider } from '../../context';
+import { DarkModeContext } from '../../context';
 
 export default function Randonvideo() {
 
@@ -35,7 +35,7 @@ export default function Randonvideo() {
     window.open(randomVideoUrl, '_blank');
   };
 
-  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+  const [darkMode] = useContext(DarkModeContext);
 
   return (
 

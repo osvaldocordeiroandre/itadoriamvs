@@ -10,7 +10,7 @@ export default function Footer() {
 
     const year = new Date().getFullYear();
 
-    const [darkMode, setDarkMode] = useContext(DarkModeContext);
+    const [darkMode] = useContext(DarkModeContext);
 
     return (
         <div className='footer-container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a'}}>

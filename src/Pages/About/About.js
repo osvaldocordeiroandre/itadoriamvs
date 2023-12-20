@@ -12,7 +12,7 @@ import { DarkModeContext } from '../../context'
 
 export default function About() {
 
-  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+  const [darkMode] = useContext(DarkModeContext);
   return (
 
     <div className='allaboutus' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>

@@ -37,7 +37,7 @@ export default function Home() {
   
   ]
 
-  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+  const [darkMode] = useContext(DarkModeContext);
 
   return (
     <div className="container" style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>

@@ -49,7 +49,7 @@ export default function Contact() {
 
   }
 
-  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+  const [darkMode] = useContext(DarkModeContext);
 
 
   return (
