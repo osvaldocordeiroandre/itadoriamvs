@@ -6,6 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 import ScrollToTop from 'react-scroll-to-top'
 
 import LogoName from '../../Assets/Imagens/Itadori_Logo_braca.webp'
+import LogoBlack from '../../Assets/Imagens/Itadori_Logo_black.webp'
 import OneOh from '../../Assets/Partner Artists/3-One-Oh.webp'
 import Caroline from '../../Assets/Partner Artists/Caroline.webp'
 import Hurshel from '../../Assets/Partner Artists/Hurshel.webp'
@@ -21,6 +22,8 @@ import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
 import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
 import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import { DarkModeContext } from '../../context'
 
 export default function Home() {
 
@@ -34,8 +37,10 @@ export default function Home() {
   
   ]
 
+  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+
   return (
-    <div className="container">
+    <div className="container" style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
 
       <ScrollToTop />
 
@@ -74,7 +79,7 @@ export default function Home() {
 
           <div className="new-images">
 
-            <h2>BEST AMVS</h2>
+            <h2 style={{ color: darkMode ? '#000' : '#fff' }}>BEST AMVS</h2>
             <div className='newDesignerContainer'>
               <div className="loveMeNow">
                 <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} alt="love me now" /></Link>
@@ -85,7 +90,7 @@ export default function Home() {
             </div>
 
             <div className="mostPopularArea">
-              <h2>MOST POPULAR</h2>
+              <h2 style={{ color: darkMode ? '#000' : '#fff' }}>MOST POPULAR</h2>
 
               <div className='popularVideos'>
                 <div className="oceanBlue">
@@ -106,7 +111,7 @@ export default function Home() {
 
           <div className="favorite-animes-container" >
 
-            <h2>TRENDING ANIME NOW 🍿</h2>
+            <h2 style={{ color: darkMode ? '#000' : '#fff' }}>TRENDING ANIME NOW 🍿</h2>
 
             <div className="animes-favorite-image">
 
@@ -120,11 +125,11 @@ export default function Home() {
 
             <div className="our-work">
 
-              <img src={LogoName} className='LogoName' alt="" />
+            {darkMode ? ( <img className='name-logo' src={LogoBlack} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={LogoName} alt="Logo itadori amv's branca" />)}
 
               <div className='h3area'>
 
-                <h3>we are proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists.
+                <h3 style={{ color: darkMode ? '#000' : '#fff' }}>we are proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists.
                 </h3>
 
               </div>

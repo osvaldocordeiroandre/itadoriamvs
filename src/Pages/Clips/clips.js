@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import { MdFirstPage, MdLastPage } from 'react-icons/md';
 
@@ -7,6 +7,7 @@ import '../../components scss/clips.scss';
 import itadorin from '../../Assets/Imagens/itadori-teach.webp'
 
 import ScrollToTop from 'react-scroll-to-top';
+import { DarkModeContext } from '../../context';
 
 export default function Clips() {
   const animes = [
@@ -191,8 +192,10 @@ export default function Clips() {
     setLoad(false)
   }
 
+  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+
   return (
-    <div onLoad={handleImageLoad} id='content-all' >
+    <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }} >
 
       {imagesLoaded && (
         <>

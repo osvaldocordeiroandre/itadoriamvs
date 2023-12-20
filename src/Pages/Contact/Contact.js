@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../../components scss/contact.scss'
 
 import { useState } from 'react'
 
 import emailjs from '@emailjs/browser'
 import ScrollToTop from 'react-scroll-to-top'
+import { DarkModeContext } from '../../context'
 
 export default function Contact() {
 
@@ -48,15 +49,17 @@ export default function Contact() {
 
   }
 
+  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+
 
   return (
-    <div className='container'>
+    <div className='container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a'}}>
 
       <ScrollToTop/>
 
       <div className="contact-main">
 
-        <div className="contact-span"> <h1> CONTACT </h1> </div>
+        <div className="contact-span"> <h1 style={{ color: darkMode ? '#000' : '#fff' }}> CONTACT </h1> </div>
 
         <form action="form" className='form-main' onSubmit={sendEmail}>
 

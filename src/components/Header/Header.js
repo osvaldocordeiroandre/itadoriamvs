@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
 import { useLocation, NavLink } from 'react-router-dom'
 
 import '../../components scss/header.scss'
 
 import Logo from '../../Assets/Imagens/Itadori_Logo_braca.webp'
+import LogoBlack from '../../Assets/Imagens/Itadori_Logo_black.webp'
 import { FaInstagram, FaDiscord } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { MdDarkMode } from 'react-icons/md';
 import Randonvideo from '../RandomVideo/Randonvideo'
+import { DarkModeContext } from '../../context'
 
 export default function Header() {
 
@@ -32,23 +35,25 @@ useEffect(() => {
 
 }, [isMenuOpen])
 
-  return (
-    <header>
+const [darkMode, setDarkMode] = useContext(DarkModeContext);
 
-      <div className="logo-name"> <NavLink to={'/'} onClick={() => setActiveLink('/')}><img className='name-logo' src={Logo} alt="Logo itadori amv's branca" /></NavLink> </div>
+  return (
+    <header style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
+
+      <div className="logo-name"> <NavLink to={'/'} onClick={() => setActiveLink('/')}> {darkMode ? ( <img className='name-logo' src={LogoBlack} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={Logo} alt="Logo itadori amv's branca" />)} </NavLink> </div>
 
       <menu className='itens'>
 
         <ul className='ul-itens'>
-          <NavLink to={'/'} onClick={() => setActiveLink('/')}> <li className={location.pathname === '/' || activeLink === '/' ? 'active-link' : ''}>HOME</li> </NavLink>
-          <NavLink to={'/About'} onClick={() => setActiveLink('/About')}> <li className={location.pathname === '/About' || activeLink === '/About' ? 'active-link' : ''}>ABOUT</li> </NavLink>
-          <NavLink to={'/Contact'} onClick={() => setActiveLink('/Contatc')}> <li className={location.pathname === '/Contact' || activeLink === '/Contact' ? 'active-link' : ''}>CONTACT</li> </NavLink>
-          <NavLink to={'/Clips'} onClick={() => setActiveLink('/Clips')}> <li className={location.pathname === '/Clips' || activeLink === '/Clips' ? 'active-link' : ''}> CLIPS </li> </NavLink>
+          <NavLink to={'/'} onClick={() => setActiveLink('/')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/' || activeLink === '/' ? 'active-link' : ''}>HOME</li> </NavLink>
+          <NavLink to={'/About'} onClick={() => setActiveLink('/About')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/About' || activeLink === '/About' ? 'active-link' : ''}>ABOUT</li> </NavLink>
+          <NavLink to={'/Contact'} onClick={() => setActiveLink('/Contatc')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/Contact' || activeLink === '/Contact' ? 'active-link' : ''}>CONTACT</li> </NavLink>
+          <NavLink to={'/Clips'} onClick={() => setActiveLink('/Clips')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/Clips' || activeLink === '/Clips' ? 'active-link' : ''}> CLIPS </li> </NavLink>
         </ul>
 
       </menu>
 
-      <div className="menu-responsive" style={{ display: itensDisplay }}>
+      <div className="menu-responsive" style={{ display: itensDisplay }} >
         <ul className='ul-itens'>
           <div>
             <NavLink to={'/'} onClick={() => setActiveLink('/')}> <li className={location.pathname === '/' || activeLink === '/' ? 'active-link' : ''}>HOME</li> </NavLink>
@@ -66,8 +71,8 @@ useEffect(() => {
 
           <div className='responsive-icons'>
 
-            <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram title='Instagram' size={19} /> </NavLink>
-            <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord title='Discord' size={19} /> </NavLink>
+            <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram title='Instagram'  size={19} /> </NavLink>
+            <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord title='Discord'  /> </NavLink>
             <Randonvideo title="Vídeo aleatorio" />
 
           </div>
@@ -76,14 +81,20 @@ useEffect(() => {
 
       <div className="icons">
 
-        <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram size={19} /> </NavLink>
-        <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord size={19} /> </NavLink>
+        <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram fill={darkMode ? 'black' : 'white'} size={19} /> </NavLink>
+        <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord fill={darkMode ? 'black' : 'white'} size={19} /> </NavLink>
         <Randonvideo />
+        
+        { !darkMode ? (
+          <div> <MdDarkMode onClick={() => setDarkMode(true)}/> </div>
+        ) : (
+          <div> <MdDarkMode fill='black' onClick={() => setDarkMode(false)} /> </div>
+        ) }
 
       </div>
 
-      <div className='container-svg'>
-        <GiHamburgerMenu onClick={handlekClick} size={24} />
+      <div className='container-svg' >
+        <GiHamburgerMenu onClick={handlekClick} fill={darkMode ? 'black' : 'white'} size={24} />
       </div>
 
     </header>

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../../components scss/randomvideo.scss'
 
 import { GiPerspectiveDiceSixFacesRandom } from 'react-icons/gi'
+import { DarkModeContext, DarkModeProvider } from '../../context';
 
 export default function Randonvideo() {
 
@@ -34,10 +35,12 @@ export default function Randonvideo() {
     window.open(randomVideoUrl, '_blank');
   };
 
+  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+
   return (
 
     <div className='randomvideo-container'>
-      <button onClick={handleButtonClick}> <GiPerspectiveDiceSixFacesRandom color='white' size={19} /> </button>
+      <button onClick={handleButtonClick}> <GiPerspectiveDiceSixFacesRandom color='white' fill={darkMode ? 'black' : 'white'} size={19} /> </button>
     </div>
 
   )
