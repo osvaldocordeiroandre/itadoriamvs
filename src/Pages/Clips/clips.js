@@ -192,29 +192,27 @@ export default function Clips() {
     setLoad(false)
   }
 
-  useEffect(() => {
+  const HandleonKeydown = (e) => {
 
-    const HandleonKeydown = (e) => {
+    if (e.key === 'Escape') {
+      closePopup();
 
-      if (e.key === 'Escape') {
-        closePopup();
-  
-      }
-  
-    };
-
-    irParaProximaPagina();
-  
-    const HandleArrow = (e) => {
-  
-      if (e.key === 'ArrowRight') {
-        irParaProximaPagina();
-      } else if (e.key === 'ArrowLeft') {
-        irParaPaginaAnterior();
-      }
-  
-  
     }
+
+  };
+
+  const HandleArrow = (e) => {
+
+    if (e.key === 'ArrowRight') {
+      irParaProximaPagina();
+    } else if (e.key === 'ArrowLeft') {
+      irParaPaginaAnterior();
+    }
+
+
+  }
+
+  useEffect(() => {
 
     document.addEventListener('keydown', HandleonKeydown);
 
@@ -224,7 +222,7 @@ export default function Clips() {
       document.removeEventListener('keydown', HandleonKeydown);
       document.removeEventListener('keydown', HandleArrow);
     };
-  }, []);
+  }, [HandleArrow]);
 
   const [darkMode] = useContext(DarkModeContext);
 
