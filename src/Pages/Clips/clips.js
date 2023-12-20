@@ -192,7 +192,41 @@ export default function Clips() {
     setLoad(false)
   }
 
-  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+  useEffect(() => {
+
+    const HandleonKeydown = (e) => {
+
+      if (e.key === 'Escape') {
+        closePopup();
+  
+      }
+  
+    };
+
+    irParaProximaPagina();
+  
+    const HandleArrow = (e) => {
+  
+      if (e.key === 'ArrowRight') {
+        irParaProximaPagina();
+      } else if (e.key === 'ArrowLeft') {
+        irParaPaginaAnterior();
+      }
+  
+  
+    }
+
+    document.addEventListener('keydown', HandleonKeydown);
+
+    document.addEventListener('keydown', HandleArrow);
+
+    return () => {
+      document.removeEventListener('keydown', HandleonKeydown);
+      document.removeEventListener('keydown', HandleArrow);
+    };
+  }, []);
+
+  const [darkMode] = useContext(DarkModeContext);
 
   return (
     <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }} >
@@ -263,7 +297,7 @@ export default function Clips() {
 
             <button onClick={closePopup}> X </button>
 
-            <iframe src={iframeSrc} frameborder="0" title='clips area' ></iframe>
+            <iframe src={iframeSrc} frameBorder="0" title='clips area' ></iframe>
 
           </div>
         )}

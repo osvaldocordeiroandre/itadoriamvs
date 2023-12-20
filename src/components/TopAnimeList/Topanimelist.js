@@ -53,6 +53,25 @@ const TopAnimeList = () => {
     setIframeLoad(true);
   }
 
+  const HandleonKeydown = (e) => {
+
+    if (e.key === 'Escape') {
+      closePopup();
+
+    }
+
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', HandleonKeydown);
+
+    return () => {
+      document.removeEventListener('keydown', HandleonKeydown);
+    };
+    
+  }, [closePopup]);
+
+
 
 
   return (
@@ -83,9 +102,9 @@ const TopAnimeList = () => {
       {isOpen && (
         <div className="popup2" onLoad={handLoad} style={{ display: iframeLoad ? 'block' : "none" }}>
 
-          <button onClick={closePopup}> X </button>
+          <button onClick={closePopup} > X </button>
 
-          <iframe src={iframeSrc} frameborder="0" title='iframe for anime trailer vídeos' allowFullScreen></iframe>
+          <iframe src={iframeSrc} frameBorder="0" title='iframe for anime trailer vídeos' allowFullScreen></iframe>
 
         </div>
       )}
