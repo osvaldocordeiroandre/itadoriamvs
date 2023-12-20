@@ -54,26 +54,32 @@ const [darkMode, setDarkMode] = useContext(DarkModeContext);
       </menu>
 
       <div className="menu-responsive" style={{ display: itensDisplay }} >
-        <ul className='ul-itens'>
+        <ul className='ul-itens' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
           <div>
-            <NavLink to={'/'} onClick={() => setActiveLink('/')}> <li className={location.pathname === '/' || activeLink === '/' ? 'active-link' : ''}>HOME</li> </NavLink>
+            <NavLink to={'/'} onClick={() => setActiveLink('/')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/' || activeLink === '/' ? 'active-link' : ''}>HOME</li> </NavLink>
           </div>
           <div>
-            <NavLink to={'/About'} onClick={() => setActiveLink('/About')}> <li className={location.pathname === '/About' || activeLink === '/About' ? 'active-link' : ''}>ABOUT</li> </NavLink>
+            <NavLink to={'/About'} onClick={() => setActiveLink('/About')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/About' || activeLink === '/About' ? 'active-link' : ''}>ABOUT</li> </NavLink>
           </div>
           <div>
-            <NavLink to={'/Contact'} onClick={() => setActiveLink('/Contatc')}> <li className={location.pathname === '/Contact' || activeLink === '/Contact' ? 'active-link' : ''}>CONTACT</li> </NavLink>
+            <NavLink to={'/Contact'} onClick={() => setActiveLink('/Contatc')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/Contact' || activeLink === '/Contact' ? 'active-link' : ''}>CONTACT</li> </NavLink>
           </div>
 
           <div>
-          <NavLink to={'/Clips'} onClick={() => setActiveLink('/Clips')}> <li className={location.pathname === '/Clips' || activeLink === '/Clips' ? 'active-link' : ''}> CLIPS </li> </NavLink>
+          <NavLink to={'/Clips'} onClick={() => setActiveLink('/Clips')}> <li style={{ color: darkMode ? '#000' : '#fff' }} className={location.pathname === '/Clips' || activeLink === '/Clips' ? 'active-link' : ''}> CLIPS </li> </NavLink>
           </div>
 
           <div className='responsive-icons'>
 
-            <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram title='Instagram'  size={19} /> </NavLink>
-            <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord title='Discord'  /> </NavLink>
+            <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram fill={darkMode ? 'black' : 'white'} title='Instagram'  size={19} /> </NavLink>
+            <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord fill={darkMode ? 'black' : 'white'} title='Discord'  /> </NavLink>
             <Randonvideo title="Vídeo aleatorio" />
+
+            { !darkMode ? (
+          <div> <MdDarkMode onClick={() => setDarkMode(true)}/> </div>
+        ) : (
+          <div> <MdDarkMode fill='black' onClick={() => setDarkMode(false)} /> </div>
+        ) }
 
           </div>
         </ul>
