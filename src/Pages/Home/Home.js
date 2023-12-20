@@ -155,7 +155,7 @@ export default function Home() {
 
         <div className="partnercontainerArea" >
 
-        <div className="partners" > <h1> OUR FAVORITE MUSICIANS </h1> </div>
+        <div className="partners" > <h1 style={{ color: darkMode ? '#000' : '#fff' }}> OUR FAVORITE MUSICIANS </h1> </div>
 
           <div className='slide-container-partners'>
             <motion.div className='carousel'>
