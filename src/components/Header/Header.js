@@ -92,9 +92,9 @@ const [darkMode, setDarkMode] = useContext(DarkModeContext);
         <Randonvideo />
         
         { !darkMode ? (
-          <div> <MdDarkMode onClick={() => setDarkMode(true)}/> </div>
+          <div> <MdDarkMode onClick={() => setDarkMode(true)} cursor={'pointer'} /> </div>
         ) : (
-          <div> <MdDarkMode fill='black' onClick={() => setDarkMode(false)} /> </div>
+          <div> <MdDarkMode fill='black' onClick={() => setDarkMode(false)} cursor={'pointer'} /> </div>
         ) }
 
       </div>

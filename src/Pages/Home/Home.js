@@ -18,7 +18,7 @@ import OceanBlue from '../../Assets/new designer/ocean-blue.webp'
 import paradise from '../../Assets/new designer/so-this-is-paradise.webp'
 import Clipsimage from '../../Assets/new designer/clipsV2.webp'
 
-import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
+import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfpV2.webp'
 import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
 import { motion } from 'framer-motion'
