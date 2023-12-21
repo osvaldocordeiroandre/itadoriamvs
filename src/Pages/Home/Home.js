@@ -16,7 +16,7 @@ import LoveNow from '../../Assets/new designer/love-me-now.webp'
 import Evertything from '../../Assets/new designer/everything-goes-on.webp'
 import OceanBlue from '../../Assets/new designer/ocean-blue.webp'
 import paradise from '../../Assets/new designer/so-this-is-paradise.webp'
-import Clipsimage from '../../Assets/new designer/clips.webp'
+import Clipsimage from '../../Assets/new designer/clipsV2.webp'
 
 import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfp.webp'
 import RenderIta from '../../Assets/Imagens/render-itadori.webp'
@@ -46,7 +46,7 @@ export default function Home() {
 
       <div className="video-itadori">
         <div className='itadoall'>
-          <img className='itadori-logo' src={LogoItadori} alt="" />
+          <img className='itadori-logo' src={LogoItadori} width={'100%'} height={'100%'} alt="Logo com personagem itadori de jujutsu kaisen" />
 
           <div className="itadori-message">
 
@@ -82,10 +82,10 @@ export default function Home() {
             <h2 style={{ color: darkMode ? '#000' : '#fff' }}>BEST AMVS</h2>
             <div className='newDesignerContainer'>
               <div className="loveMeNow">
-                <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} alt="love me now" /></Link>
+                <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} width={'100%'} height={'100%'} alt="love me now" /></Link>
               </div>
               <div className="everythingGoes">
-                <Link to={'https://youtu.be/Zu4KpfFoCow'} target='_blank'><img src={Evertything} alt="everything" /></Link>
+                <Link to={'https://youtu.be/Zu4KpfFoCow'} target='_blank'><img src={Evertything} width={'100%'} height={'100%'} alt="everything" /></Link>
               </div>
             </div>
 
@@ -94,17 +94,17 @@ export default function Home() {
 
               <div className='popularVideos'>
                 <div className="oceanBlue">
-                  <Link to={'https://youtu.be/c6YHXtHzvQg'} target='_blank'><img src={OceanBlue} alt="ocean blue" /></Link>
+                  <Link to={'https://youtu.be/c6YHXtHzvQg'} target='_blank'><img src={OceanBlue} width={'100%'} height={'100%'} alt="ocean blue" /></Link>
                 </div>
                 <div className="paradise">
-                  <Link to={'https://youtu.be/y-DXPpn23kg'} target='_blank'><img src={paradise} alt="paradise" /></Link>
+                  <Link to={'https://youtu.be/y-DXPpn23kg'} target='_blank'><img src={paradise} width={'100%'} height={'100%'} alt="paradise" /></Link>
                 </div>
               </div>
             </div>
 
             <div className="clips">
               <div className="clipsImage">
-                <NavLink to={'/clips'}><img src={Clipsimage} alt="clips" /></NavLink>
+                <NavLink to={'/clips'}><img src={Clipsimage} width={'100%'} height={'100%'} alt="clips" /></NavLink>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="our-work">
 
-            {darkMode ? ( <img className='name-logo' src={LogoBlack} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={LogoName} alt="Logo itadori amv's branca" />)}
+            {darkMode ? ( <img className='name-logo' width={'100%'} height={'100%'} src={LogoBlack} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={LogoName} alt="Logo itadori amv's branca" />)}
 
               <div className='h3area'>
 
@@ -144,7 +144,7 @@ export default function Home() {
 
             <div className="renderItadori">
 
-              <img className='renderitadorimage' src={RenderIta} alt="render itadori" />
+              <img className='renderitadorimage' src={RenderIta} width={'100%'} height={'100%'} alt="render itadori" />
 
             </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
 
                     <div className="slide">
 
-                      <a href={allpart.link} target='_blank' rel='noreferrer'><img src={allpart.imagem} className='naosei' alt="" /></a>
+                      <a href={allpart.link} target='_blank' rel='noreferrer'><img src={allpart.imagem} width={'100%'} height={'100%'} className='naosei' alt="" /></a>
 
                       <span> {allpart.nome} </span>
 
