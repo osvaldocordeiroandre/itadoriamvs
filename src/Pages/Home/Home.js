@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="our-work">
 
-            {darkMode ? ( <img className='name-logo' width={'100%'} height={'100%'} src={LogoBlack} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={LogoName} alt="Logo itadori amv's branca" />)}
+            {darkMode ? ( <img className='name-logo' width={'100%'} height={'100%'} src={LogoBlack} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={LogoName} width={'100%'} height={'100%'} alt="Logo itadori amv's branca" />)}
 
               <div className='h3area'>
 
