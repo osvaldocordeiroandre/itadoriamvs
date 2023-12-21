@@ -82,7 +82,7 @@ const TopAnimeList = () => {
           {animeData.slice(0, 5).map((anime) => (
 
             <motion.div className='trandingArea' onClick={handleClickImage} key={anime.mal_id}>
-              <img className='imagesCapa' onClick={() => openPopup(anime.trailer.embed_url)} src={anime.images.jpg.image_url} width={'100%'} height={'100%'} alt={anime.title} />
+              <img className='imagesCapa' onClick={() => openPopup(anime.trailer.embed_url)} src={anime.images.jpg.image_url} alt={anime.title} />
             </motion.div>
 
           ))}
