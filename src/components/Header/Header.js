@@ -71,8 +71,8 @@ const [darkMode, setDarkMode] = useContext(DarkModeContext);
 
           <div className='responsive-icons'>
 
-            <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram fill={darkMode ? 'black' : 'white'} title='Instagram'  size={19} /> </NavLink>
-            <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord fill={darkMode ? 'black' : 'white'} title='Discord'  /> </NavLink>
+            <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'} aria-label='Link para o instagram'> <FaInstagram fill={darkMode ? 'black' : 'white'} title='Instagram'  size={19}  /> </NavLink>
+            <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'} aria-label='Link para o Discord'> <FaDiscord fill={darkMode ? 'black' : 'white'} title='Discord'   /> </NavLink>
             <Randonvideo title="Vídeo aleatorio" />
 
             { !darkMode ? (
@@ -87,9 +87,9 @@ const [darkMode, setDarkMode] = useContext(DarkModeContext);
 
       <div className="icons">
 
-        <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}> <FaInstagram fill={darkMode ? 'black' : 'white'} size={19} /> </NavLink>
-        <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}> <FaDiscord fill={darkMode ? 'black' : 'white'} size={19} /> </NavLink>
-        <Randonvideo />
+        <NavLink to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'} aria-label='Link para o instagram'> <FaInstagram fill={darkMode ? 'black' : 'white'} size={19}  /> </NavLink>
+        <NavLink to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'} aria-label='link para discord'> <FaDiscord fill={darkMode ? 'black' : 'white'} size={19}  /> </NavLink>
+        <Randonvideo title='Vídeo aleatório' />
         
         { !darkMode ? (
           <div> <MdDarkMode onClick={() => setDarkMode(true)} cursor={'pointer'} /> </div>

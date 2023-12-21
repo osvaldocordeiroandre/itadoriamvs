@@ -167,7 +167,7 @@ export default function Home() {
 
                     <div className="slide">
 
-                      <a href={allpart.link} target='_blank' rel='noreferrer'><img src={allpart.imagem} width={'100%'} height={'100%'} className='naosei' alt="" /></a>
+                      <a href={allpart.link} target='_blank' rel='noreferrer' aria-label='Links para o canal do youtube do cantor'><img src={allpart.imagem} width={'100%'} height={'100%'} className='naosei' alt="" /></a>
 
                       <span> {allpart.nome} </span>
 

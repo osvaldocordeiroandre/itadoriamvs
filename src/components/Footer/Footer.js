@@ -23,20 +23,20 @@ export default function Footer() {
             <div className="redes-sociais-footer">
 
                 <div className="youtube">
-                    <Link to={'https://www.youtube.com/channel/UCn331wBdwv1oApYpa1vOfVw?sub_confirmation=1'} target={'_blank'}>
-                        <AiFillYoutube fill={darkMode ? 'black' : 'white'} size={24} />
+                    <Link to={'https://www.youtube.com/channel/UCn331wBdwv1oApYpa1vOfVw?sub_confirmation=1'} target={'_blank'} aria-label='Link para o meu canal no youtube Itadori amvs'>
+                        <AiFillYoutube fill={darkMode ? 'black' : 'white'} size={24}  />
                     </Link>
                 </div>
 
                 <div className="instagram">
-                    <Link to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'}>
-                        <AiFillInstagram fill={darkMode ? 'black' : 'white'} size={24} />
+                    <Link to={'https://www.instagram.com/itadoriamvs/'} target={'_blank'} aria-label='link para o Instagram'>
+                        <AiFillInstagram fill={darkMode ? 'black' : 'white'} size={24}  />
                     </Link>
                 </div>
 
                 <div className="discord">
-                    <Link to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'}>
-                        <BsDiscord fill={darkMode ? 'black' : 'white'} size={24} />
+                    <Link to={'https://discord.com/invite/fDDv7Whsry'} target={'_blank'} aria-label='Link para o Discord'>
+                        <BsDiscord fill={darkMode ? 'black' : 'white'} size={24}  />
                     </Link>
                 </div>
 
