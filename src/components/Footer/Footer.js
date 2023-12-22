@@ -5,15 +5,17 @@ import { AiFillYoutube, AiFillInstagram } from 'react-icons/ai'
 import { BsDiscord } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { DarkModeContext } from '../../context'
+import { ActiveModeContext } from '../../context/Active'
 
 export default function Footer() {
 
     const year = new Date().getFullYear();
 
     const [darkMode] = useContext(DarkModeContext);
+    const [show] = useContext(ActiveModeContext);
 
     return (
-        <div className='footer-container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a'}}>
+        <div className='footer-container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a', display: show === false ? 'none' : ''}}>
 
             <div className='year-container'>
 
