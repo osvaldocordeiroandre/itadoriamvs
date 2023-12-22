@@ -48,7 +48,7 @@ export default function About() {
             <div className='ItadoriFri'>
               <div className='softwareIcons'>
                 <div className='after-effects'><a href={'https://www.adobe.com/products/aftereffects.html'} target='_blank' rel="noreferrer" aria-label='Link para o site da adobe produto after effects'><img src={After} alt="After Effects 2020 logo" /></a></div>
-                <div className='ps'><a href="https://www.adobe.com/products/photoshop.html"><img src={Ps} alt="Photoshop 2020 logo" /></a></div>
+                <div className='ps'><a href="https://www.adobe.com/products/photoshop.html" target='_blank'><img src={Ps} alt="Photoshop 2020 logo" /></a></div>
                 <div className='davinci'><a href="https://www.blackmagicdesign.com/br/products/davinciresolve" target='_blank' rel="noreferrer"><img src={Davinci} alt="Davinci Logo" /></a></div>
                 <a href="https://www.capcut.com/" target='_blank' rel="noreferrer"><img className='capcut' src={CapCut} alt="Capcut logo" /></a>
               </div>
