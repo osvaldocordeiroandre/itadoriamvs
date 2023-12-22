@@ -50,15 +50,15 @@ export default function Home() {
 
           <div className="itadori-message">
 
-            <h1 className='channelName'> <strong> ITADORI AMV'S </strong> </h1>
-            <h3 className='h3message'> We bring another way to enjoy animations! </h3>
+            <h1 className='channelName' title='Nome do canal' > <strong> ITADORI AMV'S </strong> </h1>
+            <h3 className='h3message' title='Mensagem para motivar os editores' > We bring another way to enjoy animations! </h3>
 
           </div>
 
           <div className="itadori-analustic">
 
-            <h2 className='itadoriAnalystic'><strong>analytics</strong> 📊</h2>
-            <h1 className='dados' > <strong> 📺 80k+ subscribers <br /> 👀 22M+ views </strong> </h1>
+            <h2 className='itadoriAnalystic' title='dados do canal' ><strong>analytics</strong> 📊</h2>
+            <h1 className='dados' title='numero de inscritos e viws' > <strong> 📺 80k+ subscribers <br /> 👀 22M+ views </strong> </h1>
 
           </div>
 
@@ -79,7 +79,7 @@ export default function Home() {
 
           <div className="new-images">
 
-            <h2 style={{ color: darkMode ? '#000' : '#fff' }}>BEST AMVS</h2>
+            <h2 style={{ color: darkMode ? '#000' : '#fff' }} title='titulo sobre os melores amv'>BEST AMVS</h2>
             <div className='newDesignerContainer'>
               <div className="loveMeNow">
                 <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} width={'100%'} height={'100%'} alt="love me now" /></Link>
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
 
             <div className="mostPopularArea">
-              <h2 style={{ color: darkMode ? '#000' : '#fff' }}>MOST POPULAR</h2>
+              <h2 style={{ color: darkMode ? '#000' : '#fff' }} title='videos mais populares do canal' >MOST POPULAR</h2>
 
               <div className='popularVideos'>
                 <div className="oceanBlue">
@@ -111,7 +111,7 @@ export default function Home() {
 
           <div className="favorite-animes-container" >
 
-            <h2 style={{ color: darkMode ? '#000' : '#fff' }}>TRENDING ANIME NOW 🍿</h2>
+            <h2 style={{ color: darkMode ? '#000' : '#fff' }} title='animes em alta neste temporada' >TRENDING ANIME NOW 🍿</h2>
 
             <div className="animes-favorite-image">
 
@@ -129,14 +129,14 @@ export default function Home() {
 
               <div className='h3area'>
 
-                <h3 style={{ color: darkMode ? '#000' : '#fff' }}>we are proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists.
+                <h3 style={{ color: darkMode ? '#000' : '#fff' }} title='texto explicando como adicionando um valor unico ao nossos vídeos' >we are proud to offer unique value to the general anime community by editing high quality videos using different animations to create something totally unique with my editing. All songs featured on my channel are licensed under Creative Commons or allowed by the original artists.
                 </h3>
 
               </div>
 
               <div>
 
-                <NavLink to={'/about'}><button className='readMore'> READ MORE </button></NavLink>
+                <NavLink to={'/about'} aria-label='Link para a area about do site itadoriamv'><button className='readMore' aria-label='botão clickavel para ir para o read more' > READ MORE </button></NavLink>
 
               </div>
 
