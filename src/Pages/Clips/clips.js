@@ -122,6 +122,7 @@ export default function Clips() {
   }
 
   const handleSearch = (e) => {
+    
     setSearchTerm(e.target.value);
 
     if (e.target.value !== '' && filteredAnimes.length === 0) {
@@ -137,6 +138,7 @@ export default function Clips() {
       setShowMensagem(false)
       document.getElementById('pagesid').style.display = 'block';
     }
+    
   };
 
   const filteredAnimes = animes.filter((anime) => anime.nome.toLowerCase().includes(searchTerm.toLowerCase()));
@@ -230,6 +232,7 @@ export default function Clips() {
 
   const [darkMode] = useContext(DarkModeContext);
   const [show, setShow] = useContext(ActiveModeContext);
+  const [activeLink, setActiveLink] = useContext(ActiveModeContext);
 
   return (
     <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor: darkMode ? '#fff' : '#1a1a1a' }} >

@@ -106,7 +106,7 @@ export default function Home() {
 
             <div className="clips">
               <div className="clipsImage">
-                <NavLink to={'/clips'}><img src={Clipsimage} onClick={() => setActiveLink('/Clips')} width={'100%'} height={'100%'} alt="clips" /></NavLink>
+                <NavLink to={'/Clips'}><img src={Clipsimage} onClick={() => setActiveLink('/Clips')} width={'100%'} height={'100%'} alt="clips" /></NavLink>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Home() {
 
               <div>
 
-                <NavLink to={'/about'} aria-label='Link para a area about do site itadoriamv'><button className='readMore' onClick={() => setActiveLink('/About')} aria-label='botão clickavel para ir para o read more' > READ MORE </button></NavLink>
+                <NavLink to={'/About'} aria-label='Link para a area about do site itadoriamv'><button className='readMore' onClick={() => setActiveLink('/About') } aria-label='botão clickavel para ir para o read more' > READ MORE </button></NavLink>
 
               </div>
 
