@@ -40,7 +40,7 @@ export default function Randonvideo() {
   return (
 
     <div className='randomvideo-container'>
-      <button onClick={handleButtonClick}> <GiPerspectiveDiceSixFacesRandom color='white' fill={darkMode ? 'black' : 'white'} size={19} /> </button>
+      <button onClick={handleButtonClick} title='botão para gerar vídeo aleatorio do meu canal itadori amv'> <GiPerspectiveDiceSixFacesRandom title='Icone de um dado' color='white' fill={darkMode ? 'black' : 'white'} size={19} /> </button>
     </div>
 
   )
