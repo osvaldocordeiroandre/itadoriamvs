@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import '../../components scss/topAnimeList.scss'
 
 import { motion } from 'framer-motion';
 
 import axios from 'axios';
-
 
 const TopAnimeList = () => {
   const [animeData, setAnimeData] = useState([]);
@@ -71,9 +70,6 @@ const TopAnimeList = () => {
     
   }, [closePopup]);
 
-
-
-
   return (
     <div className='trandingMain'>
 
@@ -82,7 +78,7 @@ const TopAnimeList = () => {
           {animeData.slice(0, 5).map((anime) => (
 
             <motion.div className='trandingArea' onClick={handleClickImage} key={anime.mal_id}>
-              <img className='imagesCapa' onClick={() => openPopup(anime.trailer.embed_url)} src={anime.images.jpg.image_url} alt={anime.title} />
+              <img className='imagesCapa' width={'225px'} height={'318px'} onClick={() => openPopup(anime.trailer.embed_url)} src={anime.images.jpg.image_url} alt={anime.title} />
             </motion.div>
 
           ))}

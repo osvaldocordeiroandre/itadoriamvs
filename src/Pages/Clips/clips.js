@@ -264,7 +264,7 @@ export default function Clips() {
 
           <div className='spance-capas' onClick={handleClickImage} key={anime.id}>
 
-            <img className='anime-images' onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} />
+            <img className='anime-images' width={'100%'} height={'100%'} onClick={() => openPopup(anime.link)} src={anime.imagem} alt={anime.nome} />
 
           </div>
 
