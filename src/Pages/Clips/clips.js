@@ -11,6 +11,7 @@ import { DarkModeContext } from '../../context';
 
 export default function Clips() {
   const animes = [
+    { id: '78', nome: 'Shigatsu wa Kimi no Uso, Your Lie in April', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1187665543583514695/Shigatsu-wa-Kimi-no-Uso.webp?ex=6597b6bb&is=658541bb&hm=e1a0220df55482647606934b47aecd5068b76e7cd2a00daf6d97bd113005e2ec&', link: 'https://www.playbook.com/s/ajksz/pSMb3HekTuueixCEAmqRnUGx' },
     { id: '77', nome: 'Shangri-La Frontier', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1185347955314655293/shangri-la-frontier.webp?ex=658f484f&is=657cd34f&hm=fb3ac91ed052a37f8f84abf17418bce4637a6866a939d787bc9d497ee05e5fc3&', link: 'https://www.playbook.com/s/ajksz/rzC1dmhQuyVBW5ZZx1FeGvgS' },
     { id: '76', nome: 'Ragna Crimson, ', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1180650436668170280/Ragna-Crimson-S1.webp?ex=657e3167&is=656bbc67&hm=873b995cf81269eede224c695e24f88fa5bb05cbbfd7a2931b82946b6e96f4bf&', link: 'https://www.playbook.com/s/ajksz/eNFdihFCFStXUnYVaeux45tZ' },
     { id: '75', nome: 'Violet Movies', imagem: 'https://cdn.discordapp.com/attachments/1135116775051239434/1169108988886003732/Violet-Movies.webp?ex=65543497&is=6541bf97&hm=d5a007cc2bade5d8c3cb4de4f0bc60527c10db61ef013968d3b175d5740dfc4c&', link: 'https://www.playbook.com/s/ajksz/QaSN9y1br7G8ymCf9VWj4GgB' },
@@ -227,7 +228,7 @@ export default function Clips() {
   const [darkMode] = useContext(DarkModeContext);
 
   return (
-    <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }} >
+    <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor: darkMode ? '#fff' : '#1a1a1a' }} >
 
       {imagesLoaded && (
         <>
