@@ -459,6 +459,14 @@
     display: flex;
 }
 
+.active-linkHome {
+    background-color: orange;
+
+    border-radius: 4px;
+
+    padding: 2px;
+}
+
 @media (max-width: 1159px){
     h2{
         text-align: center;

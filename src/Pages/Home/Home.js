@@ -24,6 +24,7 @@ import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { DarkModeContext } from '../../context'
+import { ActiveModeContext } from '../../context/Active'
 
 export default function Home() {
 
@@ -38,6 +39,7 @@ export default function Home() {
   ]
 
   const [darkMode] = useContext(DarkModeContext);
+  const [activeLink, setActiveLink] = useContext(ActiveModeContext);
 
   return (
     <div className="container" style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
@@ -104,7 +106,7 @@ export default function Home() {
 
             <div className="clips">
               <div className="clipsImage">
-                <NavLink to={'/clips'}><img src={Clipsimage} width={'100%'} height={'100%'} alt="clips" /></NavLink>
+                <NavLink to={'/clips'}><img src={Clipsimage} onClick={() => setActiveLink('/Clips')} width={'100%'} height={'100%'} alt="clips" /></NavLink>
               </div>
             </div>
           </div>
@@ -136,7 +138,7 @@ export default function Home() {
 
               <div>
 
-                <NavLink to={'/about'} aria-label='Link para a area about do site itadoriamv'><button className='readMore' aria-label='botão clickavel para ir para o read more' > READ MORE </button></NavLink>
+                <NavLink to={'/about'} aria-label='Link para a area about do site itadoriamv'><button className='readMore' onClick={() => setActiveLink('/About')} aria-label='botão clickavel para ir para o read more' > READ MORE </button></NavLink>
 
               </div>
 

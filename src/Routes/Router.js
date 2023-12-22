@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ActiveModeProvider } from '../context/Active'
 
 import Home from '../Pages/Home/Home'
 import About from '../Pages/About/About'
@@ -10,7 +11,7 @@ import Footer from '../components/Footer/Footer'
 
 export default function RoutesApp() {
 
-  window.addEventListener('keydown', function(e) {
+  window.addEventListener('keydown', function (e) {
 
     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
 
@@ -25,17 +26,23 @@ export default function RoutesApp() {
     <>
       <BrowserRouter>
 
-        <Header/>
+        <ActiveModeProvider>
 
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Clips' element={<Clips />} />
-          <Route path='*' element={<Error />} />
-        </Routes>
+          <Header />
 
-        <Footer/>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Contact' element={<Contact />} />
+            <Route path='/Clips' element={<Clips />} />
+            <Route path='*' element={<Error />} />
+          </Routes>
+
+          <Footer />
+
+        </ActiveModeProvider>
+
+
 
       </BrowserRouter>
 

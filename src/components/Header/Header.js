@@ -11,11 +11,11 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdDarkMode } from 'react-icons/md';
 import Randonvideo from '../RandomVideo/Randonvideo'
 import { DarkModeContext } from '../../context'
+import { ActiveModeContext } from '../../context/Active'
 
 export default function Header() {
 
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState('');
 
   const [itensDisplay, setItensDisplay] = useState('none');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,6 +36,7 @@ useEffect(() => {
 }, [isMenuOpen])
 
 const [darkMode, setDarkMode] = useContext(DarkModeContext);
+const [activeLink, setActiveLink] = useContext(ActiveModeContext);
 
   return (
     <header style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
