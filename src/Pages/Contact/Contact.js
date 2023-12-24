@@ -7,6 +7,8 @@ import emailjs from '@emailjs/browser'
 import ScrollToTop from 'react-scroll-to-top'
 import { DarkModeContext } from '../../context'
 
+import Footer from '../../components/Footer/Footer'
+
 export default function Contact() {
 
   const [name, setName] = useState('');
@@ -74,6 +76,8 @@ export default function Contact() {
         </form>
 
       </div>
+
+      <Footer />
 
     </div>
 

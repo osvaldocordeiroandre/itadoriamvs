@@ -21,6 +21,8 @@ import Clipsimage from '../../Assets/new designer/clipsV2.webp'
 import LogoItadori from '../../Assets/Imagens/itadori_amvs_pfpV2.webp'
 import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
+import Footer from '../../components/Footer/Footer'
+
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { DarkModeContext } from '../../context'
@@ -185,6 +187,8 @@ export default function Home() {
           </div>
 
         </div>
+
+        <Footer />
 
 
       </main>

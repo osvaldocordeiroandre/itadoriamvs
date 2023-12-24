@@ -7,7 +7,6 @@ import Contact from '../Pages/Contact/Contact'
 import Error from '../Pages/Error/Error'
 import Clips from '../Pages/Clips/clips'
 import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
 
 export default function RoutesApp() {
 
@@ -37,8 +36,6 @@ export default function RoutesApp() {
             <Route path='/Clips' element={<Clips />} />
             <Route path='*' element={<Error />} />
           </Routes>
-
-          <Footer />
 
         </ActiveModeProvider>
 
