@@ -48,7 +48,8 @@ export default function Home() {
 
       <div className="video-itadori">
         <div className='itadoall'>
-          <img className='itadori-logo' src={LogoItadori} width={'100%'} height={'100%'} alt="Logo com personagem itadori de jujutsu kaisen" />
+
+          <Link to={'https://www.youtube.com/c/ITADORIAMVs'} target='_blank' aria-label='Link para o canal do Youtube itadori amvs'><img className='itadori-logo' src={LogoItadori} width={'100%'} height={'100%'} alt="Logo com personagem itadori de jujutsu kaisen" /></Link>
 
           <div className="itadori-message">
 
@@ -146,7 +147,7 @@ export default function Home() {
 
             <div className="renderItadori">
 
-              <img className='renderitadorimage' src={RenderIta} width={'100%'} height={'100%'} alt="render itadori" />
+              <Link to={'https://www.youtube.com/c/ITADORIAMVs'} target='_blank' aria-label='Link para o canal do youtube itadori amvs'><img className='renderitadorimage' src={RenderIta} width={'100%'} height={'100%'} alt="render itadori" /></Link>
 
             </div>
 

@@ -256,3 +256,11 @@ video{
 
     }
 }
+
+@media (max-width: 419px){
+
+    .softwareIcons img {
+        max-width: 40px;
+    }
+
+}
