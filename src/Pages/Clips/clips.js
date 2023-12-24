@@ -6,7 +6,6 @@ import '../../components scss/clips.scss';
 
 import itadorin from '../../Assets/Imagens/itadori-teach.webp'
 
-import ScrollToTop from 'react-scroll-to-top';
 import { DarkModeContext } from '../../context';
 import { ActiveModeContext } from '../../context/Active';
 
@@ -168,8 +167,6 @@ export default function Clips() {
           </div>
         </>
       )}
-
-      <ScrollToTop />
 
       {showmensagem && <p className='error-search'> Anime not found... </p>}
 

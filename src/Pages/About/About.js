@@ -9,7 +9,6 @@ import Render from '../../Assets/Imagens/render-itadori.webp'
 import Footer from '../../components/Footer/Footer'
 
 import '../../components scss/about.scss'
-import ScrollToTop from 'react-scroll-to-top'
 import { DarkModeContext } from '../../context'
 
 export default function About() {
@@ -18,8 +17,6 @@ export default function About() {
   return (
 
     <div className='allaboutus' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
-
-      <ScrollToTop />
 
       <div className="infos">
 

@@ -4,7 +4,6 @@ import '../../components scss/contact.scss'
 import { useState } from 'react'
 
 import emailjs from '@emailjs/browser'
-import ScrollToTop from 'react-scroll-to-top'
 import { DarkModeContext } from '../../context'
 
 import Footer from '../../components/Footer/Footer'
@@ -56,8 +55,6 @@ export default function Contact() {
 
   return (
     <div className='container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a'}}>
-
-      <ScrollToTop/>
 
       <div className="contact-main">
 

@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ActiveModeProvider } from '../context/Active'
 
+import ScrollToTop from 'react-scroll-to-top'
+
 import Home from '../Pages/Home/Home'
 import About from '../Pages/About/About'
 import Contact from '../Pages/Contact/Contact'
@@ -28,6 +30,8 @@ export default function RoutesApp() {
         <ActiveModeProvider>
 
           <Header />
+
+          <ScrollToTop smooth />
 
           <Routes>
             <Route path='/' element={<Home />} />

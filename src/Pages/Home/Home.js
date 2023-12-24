@@ -3,7 +3,6 @@ import TopList from '../../components/TopAnimeList/Topanimelist'
 import '../../components scss/home.scss'
 
 import { Link, NavLink } from 'react-router-dom'
-import ScrollToTop from 'react-scroll-to-top'
 
 import LogoName from '../../Assets/Imagens/Itadori_Logo_braca.webp'
 import LogoBlack from '../../Assets/Imagens/Itadori_Logo_black.webp'
@@ -32,8 +31,6 @@ export default function Home() {
 
   return (
     <div className="container" style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
-
-      <ScrollToTop />
 
       <div className="video-itadori">
         <div className='itadoall'>
