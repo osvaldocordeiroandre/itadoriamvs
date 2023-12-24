@@ -7,11 +7,6 @@ import ScrollToTop from 'react-scroll-to-top'
 
 import LogoName from '../../Assets/Imagens/Itadori_Logo_braca.webp'
 import LogoBlack from '../../Assets/Imagens/Itadori_Logo_black.webp'
-import OneOh from '../../Assets/Partner Artists/3-One-Oh.webp'
-import Caroline from '../../Assets/Partner Artists/Caroline.webp'
-import Hurshel from '../../Assets/Partner Artists/Hurshel.webp'
-import Neffex from '../../Assets/Partner Artists/NEFFEX.webp'
-import Scott from '../../Assets/Partner Artists/Scott-the -pisces.webp'
 import LoveNow from '../../Assets/new designer/love-me-now.webp'
 import Evertything from '../../Assets/new designer/everything-goes-on.webp'
 import OceanBlue from '../../Assets/new designer/ocean-blue.webp'
@@ -23,22 +18,14 @@ import RenderIta from '../../Assets/Imagens/render-itadori.webp'
 
 import Footer from '../../components/Footer/Footer'
 
+import partnersAll from '../../Assets/Data/Partners'
+
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { DarkModeContext } from '../../context'
 import { ActiveModeContext } from '../../context/Active'
 
 export default function Home() {
-
-  const partnersAll = [
-
-    {nome:'3 ONE OH', imagem:[OneOh], link:'https://www.youtube.com/@3OneOhOfficial'},
-    {nome:'CAROLINE', imagem:[Caroline], link:'https://www.youtube.com/c/Carolinesmusic'},
-    {nome:'HURSHEL', imagem:[Hurshel], link:'https://www.youtube.com/c/Hurshel'},
-    {nome:'NEFFEX', imagem:[Neffex], link:'https://www.youtube.com/user/neffexmusic'},
-    {nome:'SCOTT THE PISCES', imagem:[Scott], link:'https://www.youtube.com/@ScottThePisces'},
-  
-  ]
 
   const [darkMode] = useContext(DarkModeContext);
   const [activeLink, setActiveLink] = useContext(ActiveModeContext);
