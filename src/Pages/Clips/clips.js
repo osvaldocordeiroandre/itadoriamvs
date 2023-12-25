@@ -43,26 +43,49 @@ export default function Clips() {
   }
 
   const handleSearch = (e) => {
-    
+
     setSearchTerm(e.target.value);
 
-    if (e.target.value !== '' && filteredAnimes.length === 0) {
+  };
+
+  const SetFilterMessage = () => {
+
+    if (searchTerm !== '' && filteredAnimes.length === 0) {
       setShowMensagem(true);
 
       document.getElementById('pagesid').style.display = 'none';
-    } else if (e.target.value && filteredAnimes) {
+
+    } else if (searchTerm && filteredAnimes) {
       document.getElementById('pagesid').style.display = 'none';
       setShowMensagem(false);
 
     }
+
     else {
       setShowMensagem(false)
       document.getElementById('pagesid').style.display = 'block';
-    }
-    
-  };
 
-  const filteredAnimes = animes.filter((anime) => anime.nome.toLowerCase().includes(searchTerm.toLowerCase()));
+    }
+
+
+  }
+
+  useEffect(() => {
+
+    SetFilterMessage();
+
+
+  }, [searchTerm])
+
+  const filteredAnimes = animes.filter((anime) => anime.nome.toLowerCase().includes(searchTerm.toLowerCase())) ?? [];
+
+  useEffect(() => {
+
+    console.log(filteredAnimes, searchTerm, showmensagem)
+
+  }, [filteredAnimes, searchTerm, showmensagem])
+
+
 
   const itenPorPagina = 40;
   const totalPaginas = Math.ceil(filteredAnimes.length / itenPorPagina);
