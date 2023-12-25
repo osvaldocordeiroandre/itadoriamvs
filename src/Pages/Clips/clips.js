@@ -7,7 +7,6 @@ import '../../components scss/clips.scss';
 import itadorin from '../../Assets/Imagens/itadori-teach.webp'
 
 import { DarkModeContext } from '../../context';
-import { ActiveModeContext } from '../../context/Active';
 
 import animes from '../../Assets/Data/AnimesData'
 
@@ -49,12 +48,12 @@ export default function Clips() {
 
     if (e.target.value !== '' && filteredAnimes.length === 0) {
       setShowMensagem(true);
-      setShow(false);
+
       document.getElementById('pagesid').style.display = 'none';
     } else if (e.target.value && filteredAnimes) {
       document.getElementById('pagesid').style.display = 'none';
       setShowMensagem(false);
-      setShow(true);
+
     }
     else {
       setShowMensagem(false)
@@ -153,8 +152,6 @@ export default function Clips() {
   }, [HandleArrow]);
 
   const [darkMode] = useContext(DarkModeContext);
-  const [show, setShow] = useContext(ActiveModeContext);
-  const [activeLink, setActiveLink] = useContext(ActiveModeContext);
 
   return (
     <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor: darkMode ? '#fff' : '#1a1a1a' }} >

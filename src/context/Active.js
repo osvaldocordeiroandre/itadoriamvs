@@ -5,10 +5,9 @@ export const ActiveModeContext = createContext();
 export const ActiveModeProvider = ({ children }) => {
 
     const [activeLink, setActiveLink] = useState('');
-    const [show, setShow] = useState(true)
 
   return (
-    <ActiveModeContext.Provider value={[activeLink, setActiveLink, show, setShow]}>
+    <ActiveModeContext.Provider value={[activeLink, setActiveLink]}>
       {children}
     </ActiveModeContext.Provider>
   );
