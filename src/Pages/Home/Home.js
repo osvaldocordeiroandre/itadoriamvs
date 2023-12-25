@@ -68,7 +68,7 @@ export default function Home() {
 
           <div className="new-images">
 
-            <h2 style={{ color: darkMode ? '#000' : '#fff' }} title='titulo sobre os melores amv'>BEST AMVS</h2>
+            <h2 style={{ color: darkMode ? '#000' : '#fff', transition: '.5s' }} title='titulo sobre os melores amv'>BEST AMVS</h2>
             <div className='newDesignerContainer'>
               <div className="loveMeNow">
                 <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} width={'100%'} height={'100%'} alt="love me now" /></Link>

@@ -16,7 +16,7 @@ export default function About() {
   const [darkMode] = useContext(DarkModeContext);
   return (
 
-    <div className='allaboutus' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
+    <div className='allaboutus' style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a', transition: '.5s' }}>
 
       <div className="infos">
 

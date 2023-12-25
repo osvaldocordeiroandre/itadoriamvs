@@ -54,7 +54,7 @@ export default function Contact() {
 
 
   return (
-    <div className='container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a'}}>
+    <div className='container' style={{backgroundColor: darkMode ? '#fff' : '#1a1a1a', transition: '.5s'}}>
 
       <div className="contact-main">
 

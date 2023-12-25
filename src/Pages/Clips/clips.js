@@ -177,7 +177,7 @@ export default function Clips() {
   const [darkMode] = useContext(DarkModeContext);
 
   return (
-    <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor: darkMode ? '#fff' : '#1a1a1a' }} >
+    <div onLoad={handleImageLoad} id='content-all' style={{ backgroundColor: darkMode ? '#fff' : '#1a1a1a', transition: '.5s' }} >
 
       {imagesLoaded && (
         <>

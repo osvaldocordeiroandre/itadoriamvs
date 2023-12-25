@@ -39,7 +39,7 @@ const [darkMode, setDarkMode] = useContext(DarkModeContext);
 const [activeLink, setActiveLink] = useContext(ActiveModeContext);
 
   return (
-    <header style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a' }}>
+    <header style={{ backgroundColor : darkMode ? '#fff' : '#1a1a1a', transition: '.5s' }}>
 
       <div className="logo-name"> <NavLink to={'/'} onClick={() => setActiveLink('/')}> {darkMode ? ( <img className='name-logo' src={LogoBlack} width={'100%'} height={'100%'} alt="Logo itadori amv's branca" /> ) : (<img className='name-logo' src={Logo} width={'100%'} height={'100%'} alt="Logo itadori amv's branca" />)} </NavLink> </div>
 
