@@ -46,13 +46,13 @@ export default function About() {
 
             <div className='ItadoriFri'>
               <div className='softwareIcons' width='100%' height='100%' >
-                <div className='after-effects'><a href={'https://www.adobe.com/products/aftereffects.html'} target='_blank' rel="noreferrer" aria-label='Link para o site da adobe produto after effects'><img src={After} width={'100%'} height={'100%'} alt="After Effects 2020 logo" /></a></div>
-                <div className='ps'><a href="https://www.adobe.com/products/photoshop.html" target='_blank'><img src={Ps} width={'100%'} height={'100%'} alt="Photoshop 2020 logo" /></a></div>
-                <div className='davinci'><a href="https://www.blackmagicdesign.com/br/products/davinciresolve" target='_blank' rel="noreferrer"><img src={Davinci} width={'100%'} height={'100%'} alt="Davinci Logo" /></a></div>
-                <a href="https://www.capcut.com/" target='_blank' rel="noreferrer"><img className='capcut' src={CapCut} width={'100%'} height={'100%'} alt="Capcut logo" /></a>
+                <div className='after-effects'><a href={'https://www.adobe.com/products/aftereffects.html'} target='_blank' rel="noreferrer" aria-label='Link para o site da adobe produto after effects'><img src={After} width={'100%'} height={'100%'} alt="After Effects 2020 logo" loading='lazy' /></a></div>
+                <div className='ps'><a href="https://www.adobe.com/products/photoshop.html" target='_blank'><img src={Ps} width={'100%'} height={'100%'} alt="Photoshop 2020 logo" loading='lazy' /></a></div>
+                <div className='davinci'><a href="https://www.blackmagicdesign.com/br/products/davinciresolve" target='_blank' rel="noreferrer"><img src={Davinci} width={'100%'} height={'100%'} alt="Davinci Logo" loading='lazy' /></a></div>
+                <a href="https://www.capcut.com/" target='_blank' rel="noreferrer"><img className='capcut' src={CapCut} width={'100%'} height={'100%'} alt="Capcut logo" loading='lazy' /></a>
               </div>
 
-              <a href="https://www.youtube.com/c/ITADORIAMVs" target='_blank' aria-label='Link para o canal do youtube itadori amvs'><img className='render' src={Render} alt="itadori, megumi e todo" width={'100%'} height={'100%'} /></a>
+              <a href="https://www.youtube.com/c/ITADORIAMVs" target='_blank' aria-label='Link para o canal do youtube itadori amvs'><img className='render' src={Render} alt="itadori, megumi e todo" width={'100%'} height={'100%'} loading='lazy' /></a>
 
             </div>
           </div>

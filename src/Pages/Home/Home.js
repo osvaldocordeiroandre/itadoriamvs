@@ -35,7 +35,7 @@ export default function Home() {
       <div className="video-itadori">
         <div className='itadoall'>
 
-          <Link to={'https://www.youtube.com/c/ITADORIAMVs'} target='_blank' aria-label='Link para o canal do Youtube itadori amvs'><img className='itadori-logo' src={LogoItadori} width={'100%'} height={'100%'} alt="Logo com personagem itadori de jujutsu kaisen" /></Link>
+          <Link to={'https://www.youtube.com/c/ITADORIAMVs'} target='_blank' aria-label='Link para o canal do Youtube itadori amvs'><img className='itadori-logo' src={LogoItadori} width={'100%'} height={'100%'} alt="Logo com personagem itadori de jujutsu kaisen" loading='lazy' /></Link>
 
           <div className="itadori-message">
 
@@ -71,10 +71,10 @@ export default function Home() {
             <h2 style={{ color: darkMode ? '#000' : '#fff', transition: '.5s' }} title='titulo sobre os melores amv'>BEST AMVS</h2>
             <div className='newDesignerContainer'>
               <div className="loveMeNow">
-                <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} width={'100%'} height={'100%'} alt="love me now" /></Link>
+                <Link to={'https://youtu.be/wNxRo7S73PQ'} target='_blank'><img src={LoveNow} width={'100%'} height={'100%'} alt="love me now" loading='lazy' /></Link>
               </div>
               <div className="everythingGoes">
-                <Link to={'https://youtu.be/Zu4KpfFoCow'} target='_blank'><img src={Evertything} width={'100%'} height={'100%'} alt="everything" /></Link>
+                <Link to={'https://youtu.be/Zu4KpfFoCow'} target='_blank'><img src={Evertything} width={'100%'} height={'100%'} alt="everything" loading='lazy' /></Link>
               </div>
             </div>
 
@@ -83,17 +83,17 @@ export default function Home() {
 
               <div className='popularVideos'>
                 <div className="oceanBlue">
-                  <Link to={'https://youtu.be/c6YHXtHzvQg'} target='_blank'><img src={OceanBlue} width={'100%'} height={'100%'} alt="ocean blue" /></Link>
+                  <Link to={'https://youtu.be/c6YHXtHzvQg'} target='_blank'><img src={OceanBlue} width={'100%'} height={'100%'} alt="ocean blue" loading='lazy' /></Link>
                 </div>
                 <div className="paradise">
-                  <Link to={'https://youtu.be/y-DXPpn23kg'} target='_blank'><img src={paradise} width={'100%'} height={'100%'} alt="paradise" /></Link>
+                  <Link to={'https://youtu.be/y-DXPpn23kg'} target='_blank'><img src={paradise} width={'100%'} height={'100%'} alt="paradise" loading='lazy' /></Link>
                 </div>
               </div>
             </div>
 
             <div className="clips">
               <div className="clipsImage">
-                <NavLink to={'/Clips'}><img src={Clipsimage} onClick={() => setActiveLink('/Clips')} width={'100%'} height={'100%'} alt="clips" /></NavLink>
+                <NavLink to={'/Clips'}><img src={Clipsimage} onClick={() => setActiveLink('/Clips')} width={'100%'} height={'100%'} alt="clips" loading='lazy' /></NavLink>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Home() {
 
             <div className="renderItadori">
 
-              <Link to={'https://www.youtube.com/c/ITADORIAMVs'} target='_blank' aria-label='Link para o canal do youtube itadori amvs'><img className='renderitadorimage' src={RenderIta} width={'100%'} height={'100%'} alt="render itadori" /></Link>
+              <Link to={'https://www.youtube.com/c/ITADORIAMVs'} target='_blank' aria-label='Link para o canal do youtube itadori amvs'><img className='renderitadorimage' src={RenderIta} width={'100%'} height={'100%'} alt="render itadori" loading='lazy' /></Link>
 
             </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
 
                     <div className="slide">
 
-                      <a href={allpart.link} target='_blank' rel='noreferrer' aria-label='Links para o canal do youtube do cantor'><img src={allpart.imagem} width={'100%'} height={'100%'} className='naosei' alt="" /></a>
+                      <a href={allpart.link} target='_blank' rel='noreferrer' aria-label='Links para o canal do youtube do cantor'><img src={allpart.imagem} width={'100%'} height={'100%'} className='naosei' alt={allpart.nome} loading='lazy'  /></a>
 
                       <span> {allpart.nome} </span>
 
