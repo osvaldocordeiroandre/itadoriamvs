@@ -79,14 +79,6 @@ export default function Clips() {
 
   const filteredAnimes = animes.filter((anime) => anime.nome.toLowerCase().includes(searchTerm.toLowerCase())) ?? [];
 
-  useEffect(() => {
-
-    console.log(filteredAnimes, searchTerm, showmensagem)
-
-  }, [filteredAnimes, searchTerm, showmensagem])
-
-
-
   const itenPorPagina = 40;
   const totalPaginas = Math.ceil(filteredAnimes.length / itenPorPagina);
   const indexInicio = (currentPage - 1) * itenPorPagina;
